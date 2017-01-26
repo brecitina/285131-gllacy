@@ -5,8 +5,190 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="container">
+        <img src="http://placehold.it/150x50" style="width: 150px; height: 50px;" alt="Gllacy Shop">
+        <nav class="main-nav">
+          <ul>
+            <li><a class="main-nav-item" href="#">Каталог</a></li> <!---Добавить подменю-->
+            <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
+            <li><a class="main-nav-item" href="#">О компании</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <div class="searshinput"><!---Вставить форму с полем поиска см. adidas.ru. Перед формой еще есть ссылка?!-->Что ищем?</div>
+          <a href="#">Вход</a>
+          <div class="all-products"><!---Вставить как на shop.lenovo.ru (блок small_basket) или на адидасе-->Пусто</div>
+        </div>
+        <div>
+          С 10 до 20, ежедневно<br>
+          <span>8 812 450-25-25</span>
+        </div>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <div class="promo">
+      <!---Слайдер. Кнопки см. «Мастерская: декоративные эффекты на CSS3» Слайдер на CSS, шаг 4. Реализацию фона и мороженок на прозрачном фоне еще найти.
+      Возможно, придется вынести слайдер?!
+      Здесь реализация анимацией http://gnatkovsky.com.ua/slajder-fonovogo-izobrazheniya-ili-menyayushhijsya-fon-sajta-s-pomoshhyu-css.html
+      Здесь еще раз про слайдер на КСС https://habrahabr.ru/post/252075/
+      -->
+      <div class="slider">
+        <h2>Крем-брюле и пломбир с малиновым джемом</h2><!---Заголовок вписать в слайдер! Должно быть еще 2 названия-->
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+        <div class="slider-sliders">
+          <img src="http://placehold.it/500x300" style="width: 500px; height: 300px" alt="Крем-брюле и пломбир с малиновым джемом">
+          <img src="http://placehold.it/500x300" style="width: 500px; height: 300px" alt="Шоколадный пломбир и лимонный сорбет">
+          <img src="http://placehold.it/500x300" style="width: 500px; height: 300px" alt="Пломбир с помадкой и клубничный щербет">
+        </div>
+        <a class="btn" href="#">Давайте оба!</a>
+      </div>
+    </div>
 
+    <main>
+      <div class="conteiner">
+        <div class="specials">
+          <article class="spasial-item">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="btn" href="#">Хочу варенье!</a>
+          </article>
+          <article class="spasial-item">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
+            <a class="btn" href="#">Шоколадки!</a>
+          </article>
+        </div>
+
+        <div class="popular">
+          <div class="popular-item">
+            <div class="background-hover">
+              <a class="btn" href="#">Быстрый просмотр</a> <!---В обычном состоянии невидима-->
+            </div><!---В обычном состоянии невидим-->
+            <a href="#"> <!---Разобрать структуру с быстрым просмотром на твоё-ру -->
+              <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <div class="price">
+                <span>310 </span> / кг <!---Знак рубля у меня - фоновая картинка. В мозилле https://toster.ru/q/227860 -->
+              </div> 
+              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </a>
+          </div>
+          <div class="popular-item">
+            <div class="background-hover">
+              <a class="btn" href="#">Быстрый просмотр</a> 
+            </div>
+            <a href="#">
+              <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-кофейное с кусочками шоколада">
+              <div class="price">
+                <span>380</span> / кг
+              </div> 
+              <p>Сливочно-кофейное с кусочками шоколада</p>
+            </a>
+          </div>
+          <div class="popular-item">
+            <div class="background-hover">
+              <a class="btn" href="#">Быстрый просмотр</a> 
+            </div>
+            <a href="#">
+              <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <div class="price">
+                <span>355 </span> / кг
+              </div> 
+              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </a>
+          </div>
+          <div class="popular-item">
+            <div class="background-hover">
+              <a class="btn" href="#">Быстрый просмотр</a> 
+            </div>
+            <a href="#">
+              <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное крем-брюле с карамельной подливкой">
+              <div class="price">
+                <span>415 </span> / кг
+              </div> 
+              <p>Сливочное крем-брюле с карамельной подливкой</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="features">
+          <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+          <div class="features-column">
+            <p class="ice-img">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p class="leaf-img">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </div>
+          <div class="features-column">
+            <p class="cow-img">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="thermo-img">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="communication reference">
+            Новое в нашем блоге
+            <h3 class="blog">
+              <a href="#">
+                10  способов сервировки фруктовых щербетов к<br>
+                столу
+              </a>
+            </h3>
+          </div>
+          <div class="communication subscribe">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <form action="#" method="POST">
+              <input type="email" id="user-mail" placeholder="Электронная почта">
+              <button class="btn" type="submit">Отправить</button>
+            </form>   
+          </div>
+        </div>
+      </div>
+
+      <div class="map-contacts">
+        <!---Реализацию карты посмотреть здесь http://sm-kommunalka.ru/-->
+        <div class="conteiner">
+          <div class="contacts">
+            <p>Адрес главного офиса<br>
+            и офлайн магазина:</p>
+            <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            <p>Для заказов по телефону:</p>
+            <span>8 812 450-25-25</span>
+            (с 10 до 20 ежедневно)
+            <a class="btn" href="#">Форма обратной связи</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="social-footer">
+          <a class="btn-social btn-social-tw" href="#">Твиттер</a>
+          <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+          <a class="btn-social btn-social-fb" href="#">Фэйсбук</a>
+          <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+        </div>
+        <div class="column-1 nav-footer">
+          <ul>
+            <li><a href="#"><b>Для поставщиков</b></a></li>
+            <li><a href="#">О производстве</a></li>
+          </ul>
+        </div>
+        <div class="column-2 nav-footer">
+          <ul>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>         
+        </div>
+        <div class="copiright-footer">
+          <a href="https://htmlacademy.ru/"></a>
+          Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy;2017
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
