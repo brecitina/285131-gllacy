@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
       <div class="container">
-        <a href="index.html"><img src="http://placehold.it/150x50" style="width: 150px; height: 50px;" alt="Gllacy Shop"></a>
+        <a href="index.html"><img src="img/logo.png" style="width: 154px; height: 64px;" alt="Gllacy Shop"></a>
         <nav class="main-nav">
           <ul>
             <li><a class="main-nav-item" href="#">Каталог</a></li> <!---Добавить подменю-->
@@ -51,36 +52,49 @@
               Цена: 100 руб. &#8212; 500 руб.
             </div>
             <div class="fatness">
-              Жирность: <!---Нужна обертка для полей-->
-              <label>
-                <input type="radio" name="filter-fatness" value="0%">
-                0%
-              </label>
-              <label>
-                <input type="radio" name="filter-fatness" value="to 10%">
-                до 10%
-              </label>
-              <label>
-                <input type="radio" name="filter-fatness" value="to 30%">
-                до 30%
-              </label>
-              <label>
-                <input type="radio" name="filter-fatness" value="more 30%">
-                выше 30%
-              </label>
+              Жирность: 
+              <ul>
+                <li><label>
+                  <input type="radio" name="filter-fatness" value="0%">
+                  0%
+                </label></li>
+                <li><label>
+                  <input type="radio" name="filter-fatness" value="to 10%">
+                  до 10%
+                </label></li>
+                <li><label>
+                  <input type="radio" name="filter-fatness" value="to 30%">
+                  до 30%
+                </label></li>
+                <li><label>
+                  <input type="radio" name="filter-fatness" value="more 30%">
+                  выше 30%
+                </label></li>
+              </ul>
             </div>
             <div class="toppings">
-              Наполнители: <!---Нужна обертка для полей-->
-              <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
-              <label for="topping-chocolate">шоколадные</label>
-              <input id="topping-powder" type="checkbox" name="topping-powder">
-              <label for="topping-powder">сахарные присыпки</label>
-              <input id="topping-fruit" type="checkbox" name="topping-fruit">
-              <label for="topping-fruit">фрукты</label>
-              <input id="topping-syrups" type="checkbox" name="topping-suryps">
-              <label for="topping-syrups">сиропы</label>
-              <input id="topping-jams" type="checkbox" name="topping-jams">
-              <label for="topping-jams">джемы</label>
+              Наполнители:
+              <ul>
+                <li>
+                  <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
+                  <label for="topping-chocolate">шоколадные</label>
+                </li>
+                <li>
+                  <input id="topping-powder" type="checkbox" name="topping-powder">
+                  <label for="topping-powder">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input id="topping-fruit" type="checkbox" name="topping-fruit">
+                  <label for="topping-fruit">фрукты</label>
+                </li>
+                <li>
+                  <input id="topping-syrups" type="checkbox" name="topping-suryps">
+                  <label for="topping-syrups">сиропы</label>
+                </li>
+                <li>
+                  <input id="topping-jams" type="checkbox" name="topping-jams">
+                  <label for="topping-jams">джемы</label>
+              </ul>
             </div>
             <button type="submit">Применить</button>
           </form>
@@ -93,7 +107,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/creamy-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <div class="price">
                   <span>310</span> /кг
                 </div>
@@ -105,7 +119,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/coffe-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-кофейное с кусочками шоколада">
                 <div class="price">
                   <span>380</span> /кг
                 </div>
@@ -117,7 +131,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/strawberry-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <div class="price">
                   <span>355</span> /кг
                 </div>
@@ -129,7 +143,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/brulee-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное крем-брюле с карамельной подливкой">
                 <div class="price">
                   <span>415</span> /кг
                 </div>
@@ -141,7 +155,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с брусничным джемом">
+                <img src="img/lingonberry-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с брусничным джемом">
                 <div class="price">
                   <span>325</span> /кг
                 </div>
@@ -153,7 +167,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-черничное с цельными ягодами черники">
+                <img src="img/blackberry-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-черничное с цельными ягодами черники">
                 <div class="price">
                   <span>410</span> /кг
                 </div>
@@ -165,7 +179,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-лимонное с карамельной присыпкой">
+                <img src="img/lemon-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-лимонное с карамельной присыпкой">
                 <div class="price">
                   <span>375</span> /кг
                 </div>
@@ -177,7 +191,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с шоколадной стружкой">
+                <img src="img/chocchips-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с шоколадной стружкой">
                 <div class="price">
                   <span>320</span> /кг
                 </div>
@@ -189,7 +203,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочно-ванильное с кусочками шоколада">
+                <img src="img/vanilla-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-ванильное с кусочками шоколада">
                 <div class="price">
                   <span>440</span> /кг
                 </div>
@@ -201,7 +215,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочноe с ментоловым сиропом">
+                <img src="img/menthol-item.jpg" style="width: 200px; height: 200px;" alt="Сливочноe с ментоловым сиропом">
                 <div class="price">
                   <span>435</span> /кг
                 </div>
@@ -213,7 +227,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с кусочками черного шоколада">
+                <img src="img/pieces-dark-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с кусочками черного шоколада">
                 <div class="price">
                   <span>355</span> /кг
                 </div>
@@ -225,7 +239,7 @@
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
-                <img src="http://placehold.it/200x200" style="width: 200px; height: 200px;" alt="Сливочное с мятным сиропом">
+                <img src="img/mint-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с мятным сиропом">
                 <div class="price">
                   <span>420</span> /кг
                 </div>
