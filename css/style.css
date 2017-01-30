@@ -6,8 +6,8 @@
 body {
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
   font-family: "Roboto Bold";
+  color: #ffffff;
   background-color: #849d8f;
 }
 
@@ -20,4 +20,73 @@ h3 {
 h2 {
   font-size: 60px;
   line-height: 60px;
+}
+
+/*Скрою слайдер, т.к. пока непонятно, как его писать*/
+.promo {
+  display: none;
+}
+
+.wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  outline: 2px solid #ffff00; 
+}
+
+.container {
+  box-sizing: border-box;
+  /*помни, что здесь width: 100%*/
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-nav {
+  float: left;
+  width: 74.425%;
+  outline: 2px solid #ff0000;
+}
+
+.user-block {
+  float: right;
+  width: 23.275%;
+  outline: 2px solid #ff0000;
+}
+
+.header-lable {
+  float: right;
+  clear: right;
+  width: 23.275%;
+  outline: 2px solid #ff0000;
+}
+
+.specials {
+  margin-bottom: 40px;
+  outline: 2px solid #ff0000;
+}
+
+.spasial-item {
+  float: left;
+  width: 48.85%;
+  margin-right: 2.3%;
+  outline: 2px solid #ff00ff;
+}
+
+.spasial-item:last-child {
+  margin-right: 0;
+}
+
+.popular {
+  outline: 2px solid #ff0000;
+  margin-bottom: 40px;
+}
+
+.popular-item {
+
 }
