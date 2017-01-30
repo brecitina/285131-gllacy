@@ -22,11 +22,6 @@ h2 {
   line-height: 60px;
 }
 
-/*Скрою слайдер, т.к. пока непонятно, как его писать*/
-.promo {
-  display: none;
-}
-
 .wrapper {
   min-width: 900px;
   max-width: 1200px;
@@ -66,27 +61,138 @@ h2 {
   outline: 2px solid #ff0000;
 }
 
-.specials {
-  margin-bottom: 40px;
+/*Скрою слайдер, т.к. пока непонятно, как его писать*/
+.promo {
+  display: none;
+}
+
+.specials,
+.popular,
+.features,
+.communication-items {
+  margin-bottom: 40px; /*для .communication выпадет за родительский контейнер wrapper*/
   outline: 2px solid #ff0000;
 }
 
-.spasial-item {
+.spasial-item,
+.features-column,
+.communication {
   float: left;
   width: 48.85%;
   margin-right: 2.3%;
   outline: 2px solid #ff00ff;
 }
 
-.spasial-item:last-child {
+.popular-item {
+  float: left;
+  width: 23.275%;
+  margin-right: 2.3%;
+  outline: 2px solid #ff00ff;
+}
+
+.spasial-item:last-child,
+.popular-item:last-child,
+.features-column:last-child,
+.communication:last-child {
   margin-right: 0;
 }
 
-.popular {
+.map-contacts {
+  background-color: #00aa00;
+  outline: 2px solid #00ff00;
+}
+
+.contacts {
+  float: right;
+  width: 302px;
+  margin-top: 62px;
+  margin-bottom: 62px;
   outline: 2px solid #ff0000;
+}
+
+.main-footer {
+  padding: 20px 0;
+  outline: 2px solid #0000ff;
+}
+
+.column-left {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding-right: 40px; 
+  outline: 2px solid #ff00ff;
+}
+
+.social-footer {
+  float: left;
+  width: 200px;
+  outline: 2px solid #0ff0f0;
+}
+
+.column-1 {
+  float: right;
+  width: 135px;
+  outline: 2px solid #0ff0f0;
+}
+
+.column-2 {
+  box-sizing: border-box;
+  float: left;
+  width: 23.275%;
+  margin-left: -8px;
+  outline: 2px solid #ff0000;
+}
+
+.copiright-footer {
+  float: right;
+  width: 190px;
+  outline: 2px solid #ff00ff;
+}
+
+.breadcrumbs {
+  margin-top: -16px;
+  margin-bottom: 7px;
+  outline: 2px solid #00ff00;
+}
+
+.filters {
+  margin-top: 33px;
   margin-bottom: 40px;
+  outline: 2px solid #ff0000;
 }
 
-.popular-item {
-
+.filters .sorting,
+.filters .price,
+.filters .fatness,
+.filters .toppings,
+.filters button[type="submit"] {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 17px;
+  vertical-align: bottom;
+  outline: 2px solid #ff00ff;
 }
+
+.filters .sorting {
+  width: 194px;
+}
+
+.filters .price {
+  width: 218px;
+}
+
+.filters .fatness {
+  width: 416px;
+  margin-right: 0;
+}
+
+.filters .toppings {
+  width: 703px;
+  margin-bottom: 0;
+}
+
+.filters button[type="submit"] {
+  width: 145px;
+  margin-bottom: 0;
+}
+
