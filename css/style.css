@@ -74,12 +74,11 @@ h2 {
   outline: 2px solid #ff0000;
 }
 
-.spasial-item,
+.spacial-item,
 .features-column,
 .communication {
   float: left;
   width: 48.85%;
-  margin-right: 2.3%;
   outline: 2px solid #ff00ff;
 }
 
@@ -90,10 +89,13 @@ h2 {
   outline: 2px solid #ff00ff;
 }
 
-.spasial-item:last-child,
-.popular-item:last-child,
+.spacial-item:last-child,
 .features-column:last-child,
 .communication:last-child {
+  float: right;
+}
+
+.popular-item:last-child {
   margin-right: 0;
 }
 
