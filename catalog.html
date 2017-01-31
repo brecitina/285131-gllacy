@@ -2,106 +2,108 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Сливочное мороженое</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="main-header">
-      <div class="container">
-        <a href="index.html"><img src="img/logo.png" style="width: 154px; height: 64px;" alt="Gllacy Shop"></a>
-        <nav class="main-nav">
-          <ul>
-            <li><a class="main-nav-item" href="#">Каталог</a></li> <!---Добавить подменю-->
-            <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
-            <li><a class="main-nav-item" href="#">О компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <div class="searshinput"><!---Вставить форму с полем поиска см. adidas.ru. Перед формой еще есть ссылка?!-->Что ищем?</div>
-          <a href="#">Вход</a>
-          <div class="all-products"><!---Вставить как на shop.lenovo.ru (блок small_basket) или на адидасе-->2 товара</div>
-        </div>
-        <div>
-          С 10 до 20, ежедневно<br>
-          <span>8 812 450-25-25</span>
+    <header class="main-header">
+      <div class="wrapper">
+        <div class="container clearfix">
+          <nav class="main-nav">
+            <a href="index.html"><img src="img/logo.png" style="width: 154px; height: 64px;" alt="Gllacy Shop"></a>
+            <ul>
+              <li><a class="main-nav-item" href="#">Каталог</a></li> <!---Добавить подменю-->
+              <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
+              <li><a class="main-nav-item" href="#">О компании</a></li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <div class="searshinput"><!---Вставить форму с полем поиска см. adidas.ru. Перед формой еще есть ссылка?!-->Что ищем?</div>
+            <a href="#">Вход</a>
+            <div class="all-products"><!---Вставить как на shop.lenovo.ru (блок small_basket) или на адидасе-->2 товара</div>
+          </div>
+          <div class="header-lable">
+            С 10 до 20, ежедневно<br>
+            <span>8 812 450-25-25</span>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li>Сливочное</li>
-        </ul>
-        <h1>Сливочное мороженое</h1>
+      <div class="wrapper">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li>Сливочное</li>
+          </ul>
+          <h1>Сливочное мороженое</h1>
 
-        <div class="filters">
-          <form action="#" method="get">
-            <div class="sorting">
-              <label for="sorting">Сортировка:</label>
-              <select id="sorting" name="filter-sorting">
-                <option value="popularity">по популярности</option>
-                <option value="cheap">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="fatness">по жирности</option>
-              </select>
-            </div>
-            <div class="price"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
-              Цена: 100 руб. &#8212; 500 руб.
-            </div>
-            <div class="fatness">
-              Жирность: 
-              <ul>
-                <li><label>
-                  <input type="radio" name="filter-fatness" value="0%">
-                  0%
-                </label></li>
-                <li><label>
-                  <input type="radio" name="filter-fatness" value="to 10%">
-                  до 10%
-                </label></li>
-                <li><label>
-                  <input type="radio" name="filter-fatness" value="to 30%">
-                  до 30%
-                </label></li>
-                <li><label>
-                  <input type="radio" name="filter-fatness" value="more 30%">
-                  выше 30%
-                </label></li>
-              </ul>
-            </div>
-            <div class="toppings">
-              Наполнители:
-              <ul>
-                <li>
-                  <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
-                  <label for="topping-chocolate">шоколадные</label>
-                </li>
-                <li>
-                  <input id="topping-powder" type="checkbox" name="topping-powder">
-                  <label for="topping-powder">сахарные присыпки</label>
-                </li>
-                <li>
-                  <input id="topping-fruit" type="checkbox" name="topping-fruit">
-                  <label for="topping-fruit">фрукты</label>
-                </li>
-                <li>
-                  <input id="topping-syrups" type="checkbox" name="topping-suryps">
-                  <label for="topping-syrups">сиропы</label>
-                </li>
-                <li>
-                  <input id="topping-jams" type="checkbox" name="topping-jams">
-                  <label for="topping-jams">джемы</label>
-              </ul>
-            </div>
-            <button type="submit">Применить</button>
-          </form>
-        </div>      
+          <div class="filters">
+            <form action="#" method="get">
+              <div class="sorting">
+                <label for="sorting">Сортировка:</label>
+                <select id="sorting" name="filter-sorting">
+                  <option value="popularity">по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fatness">по жирности</option>
+                </select>
+              </div>
+              <div class="price"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
+                Цена: 100 руб. &#8212; 500 руб.
+              </div>
+              <div class="fatness">
+                Жирность: 
+                <ul>
+                  <li><label>
+                    <input type="radio" name="filter-fatness" value="0%">
+                    0%
+                  </label></li>
+                  <li><label>
+                    <input type="radio" name="filter-fatness" value="to 10%">
+                    до 10%
+                  </label></li>
+                  <li><label>
+                    <input type="radio" name="filter-fatness" value="to 30%">
+                    до 30%
+                  </label></li>
+                  <li><label>
+                    <input type="radio" name="filter-fatness" value="more 30%">
+                    выше 30%
+                  </label></li>
+                </ul>
+              </div>
+              <div class="toppings">
+                Наполнители:
+                <ul>
+                  <li>
+                    <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
+                    <label for="topping-chocolate">шоколадные</label>
+                  </li>
+                  <li>
+                    <input id="topping-powder" type="checkbox" name="topping-powder">
+                    <label for="topping-powder">сахарные присыпки</label>
+                  </li>
+                  <li>
+                    <input id="topping-fruit" type="checkbox" name="topping-fruit">
+                    <label for="topping-fruit">фрукты</label>
+                  </li>
+                  <li>
+                    <input id="topping-syrups" type="checkbox" name="topping-suryps">
+                    <label for="topping-syrups">сиропы</label>
+                  </li>
+                  <li>
+                    <input id="topping-jams" type="checkbox" name="topping-jams">
+                    <label for="topping-jams">джемы</label>
+                </ul>
+              </div>
+              <button type="submit">Применить</button>
+            </form>
+          </div>      
 
-        <div class="catalog">
-          <div class="catalog-items">
+          <div class="catalog clearfix">
             <div class="catalog-item">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
@@ -158,14 +160,14 @@
                 <img src="img/lingonberry-item.jpg" style="width: 200px; height: 200px;" alt="Сливочное с брусничным джемом">
                 <div class="price">
                   <span>325</span> /кг
-                </div>
+                 </div>
                 <p>Сливочное с брусничным джемом</p>
               </a>
             </div>
             <div class="catalog-item">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
-              </div>
+               </div>
               <a href="#">
                 <img src="img/blackberry-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-черничное с цельными ягодами черники">
                 <div class="price">
@@ -178,13 +180,13 @@
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
-              <a href="#">
+               <a href="#">
                 <img src="img/lemon-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-лимонное с карамельной присыпкой">
                 <div class="price">
                   <span>375</span> /кг
                 </div>
                 <p>Сливочно-лимонное с карамельной присыпкой</p>
-              </a>
+               </a>
             </div>
             <div class="catalog-item">
               <div class="background-hover">
@@ -198,14 +200,14 @@
                 <p>Сливочное с шоколадной стружкой</p>
               </a>
             </div>
-            <div class="catalog-item">
+             <div class="catalog-item">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
                 <img src="img/vanilla-item.jpg" style="width: 200px; height: 200px;" alt="Сливочно-ванильное с кусочками шоколада">
                 <div class="price">
-                  <span>440</span> /кг
+                   <span>440</span> /кг
                 </div>
                 <p>Сливочно-ванильное с кусочками шоколада</p>
               </a>
@@ -218,7 +220,7 @@
                 <img src="img/menthol-item.jpg" style="width: 200px; height: 200px;" alt="Сливочноe с ментоловым сиропом">
                 <div class="price">
                   <span>435</span> /кг
-                </div>
+                 </div>
                 <p>Сливочноe с ментоловым сиропом</p>
               </a>
             </div>
@@ -235,7 +237,7 @@
               </a>
             </div>
             <div class="catalog-item">
-              <div class="background-hover">
+               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
               <a href="#">
@@ -247,8 +249,8 @@
               </a>
             </div>
           </div>
-          <div class="paginator"> <!---См. курс Мастерская: декоративные элементы. Переключатель страниц-->
-            <ul>
+          <div class="clearfix"> <!---См. курс Мастерская: декоративные элементы. Переключатель страниц-->
+            <ul class="paginator">
               <li><a class="prev disabled" href="#prev">Назад</a></li>
               <li><a class="current" href="#1">1</a></li>
               <li><a href="#2">2</a></li>
@@ -263,28 +265,33 @@
     </main>
     
     <footer class="main-footer">
-      <div class="container">
-        <div class="social-footer">
-          <a class="btn-social btn-social-tw" href="#">Твиттер</a>
-          <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-          <a class="btn-social btn-social-fb" href="#">Фэйсбук</a>
-          <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
-        </div>
-        <div class="column-1 nav-footer">
-          <ul>
-            <li><a href="#"><b>Для поставщиков</b></a></li>
-            <li><a href="#">О производстве</a></li>
-          </ul>
-        </div>
-        <div class="column-2 nav-footer">
-          <ul>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
-          </ul>         
-        </div>
-        <div class="copiright-footer">
-          <a href="https://htmlacademy.ru/"></a>
-          Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy;2017
+      <div class="wrapper">
+        <div class="container clearfix">
+          <div class="column-left">
+            <div class="social-footer">
+              <a class="btn-social btn-social-tw" href="#">Твиттер</a>
+              <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+              <a class="btn-social btn-social-fb" href="#">Фэйсбук</a>
+              <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+            </div>
+            <div class="column-1 nav-footer">
+              <ul>
+                <li><a href="#"><b>Для поставщиков</b></a></li>
+                <li><a href="#">О производстве</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="column-2 nav-footer">
+            <ul>
+              <li><a href="#">Наши документы</a></li>
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>         
+          </div>
+          <div class="copiright-footer">
+            <a href="https://htmlacademy.ru/"></a>
+            Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy;2017
+          </div>
         </div>
       </div>
     </footer>
