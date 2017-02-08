@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженое</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="wrapper">
-        <div class="container clearfix">
+        <div class="row clearfix">
           <nav class="main-nav">
             <a href="index.html"><img src="img/logo.png" style="width: 154px; height: 64px;" alt="Gllacy Shop"></a>
             <ul>
@@ -32,17 +32,18 @@
 
     <main>
       <div class="wrapper">
-        <div class="container">
+        <div class="row">
           <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
             <li>Сливочное</li>
           </ul>
           <h1>Сливочное мороженое</h1>
+        </div>
 
-          <div class="filters">
-            <form action="#" method="get">
-              <div class="sorting">
+          <div class="row filters">
+            <form action="#" method="GET">
+              <div class="filter sorting">
                 <label for="sorting">Сортировка:</label>
                 <select id="sorting" name="filter-sorting">
                   <option value="popularity">по популярности</option>
@@ -51,10 +52,10 @@
                   <option value="fatness">по жирности</option>
                 </select>
               </div>
-              <div class="price"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
+              <div class="filter price"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
                 Цена: 100 руб. &#8212; 500 руб.
               </div>
-              <div class="fatness">
+              <div class="filter fatness">
                 Жирность: 
                 <ul>
                   <li><label>
@@ -75,7 +76,7 @@
                   </label></li>
                 </ul>
               </div>
-              <div class="toppings">
+              <div class="filter toppings">
                 Наполнители:
                 <ul>
                   <li>
@@ -99,12 +100,12 @@
                     <label for="topping-jams">джемы</label>
                 </ul>
               </div>
-              <button type="submit">Применить</button>
+              <button class="filter" type="submit">Применить</button>
             </form>
           </div>      
 
-          <div class="catalog clearfix">
-            <div class="catalog-item">
+          <div class="row catalog clearfix">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -116,7 +117,7 @@
                 <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -128,7 +129,7 @@
                 <p>Сливочно-кофейное с кусочками шоколада</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -140,7 +141,7 @@
                 <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -152,7 +153,7 @@
                 <p>Сливочное крем-брюле с карамельной подливкой</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -164,7 +165,7 @@
                 <p>Сливочное с брусничным джемом</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
                </div>
@@ -176,7 +177,7 @@
                 <p>Сливочно-черничное с цельными ягодами черники</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -188,7 +189,7 @@
                 <p>Сливочно-лимонное с карамельной присыпкой</p>
                </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -200,7 +201,7 @@
                 <p>Сливочное с шоколадной стружкой</p>
               </a>
             </div>
-             <div class="catalog-item">
+             <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -212,7 +213,7 @@
                 <p>Сливочно-ванильное с кусочками шоколада</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -224,7 +225,7 @@
                 <p>Сливочноe с ментоловым сиропом</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -236,7 +237,7 @@
                 <p>Сливочное с кусочками черного шоколада</p>
               </a>
             </div>
-            <div class="catalog-item">
+            <div class="cell">
                <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
               </div>
@@ -249,7 +250,7 @@
               </a>
             </div>
           </div>
-          <div class="clearfix"> <!---См. курс Мастерская: декоративные элементы. Переключатель страниц-->
+          <div class="row clearfix"> <!---См. курс Мастерская: декоративные элементы. Переключатель страниц-->
             <ul class="paginator">
               <li><a class="prev disabled" href="#prev">Назад</a></li>
               <li><a class="current" href="#1">1</a></li>
@@ -266,7 +267,7 @@
     
     <footer class="main-footer">
       <div class="wrapper">
-        <div class="container clearfix">
+        <div class="row clearfix">
           <div class="column-left">
             <div class="social-footer">
               <a class="btn-social btn-social-tw" href="#">Твиттер</a>

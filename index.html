@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="wrapper">
-        <div class="container clearfix">
+        <div class="row clearfix">
           <nav class="main-nav">
             <img src="img/logo.png" style="width: 154px; height: 64px;" alt="Gllacy Shop">
             <ul>
@@ -57,22 +57,22 @@
  
     <main>
       <div class="wrapper">
-        <div class="container">
-          <div class="specials clearfix">
-            <article class="spacial-item">
+        
+          <div class="row specials clearfix">
+            <article class="column-left">
               <h3>Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="btn" href="#">Хочу варенье!</a>
             </article>
-            <article class="spacial-item">
+            <article class="column-right">
               <h3>Шоколадки даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
               <a class="btn" href="#">Шоколадки!</a>
             </article>
           </div>
 
-          <div class="popular clearfix">
-            <div class="popular-item">
+          <div class="row popular clearfix">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a> <!---В обычном состоянии невидима-->
               </div><!---В обычном состоянии невидим-->
@@ -84,7 +84,7 @@
                 <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </a>
             </div>
-            <div class="popular-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a> 
               </div>
@@ -96,7 +96,7 @@
                 <p>Сливочно-кофейное с кусочками шоколада</p>
               </a>
             </div>
-            <div class="popular-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a> 
               </div>
@@ -108,7 +108,7 @@
                 <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               </a>
             </div>
-            <div class="popular-item">
+            <div class="cell">
               <div class="background-hover">
                 <a class="btn" href="#">Быстрый просмотр</a> 
               </div>
@@ -122,20 +122,20 @@
             </div>
           </div>
 
-          <div class="features clearfix"> <!---Возможно реализовать как таблицу на ксс?-->
+          <div class="row features clearfix"> <!---Возможно реализовать как таблицу на ксс?-->
             <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-            <div class="features-column">
+            <div class="column-left">
               <p class="ice-img">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
               <p class="leaf-img">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </div>
-            <div class="features-column">
+            <div class="column-right">
               <p class="cow-img">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               <p class="thermo-img">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </div>
           </div>
 
-          <div class="communication-items clearfix">
-            <div class="communication reference">
+          <div class="row communication-items clearfix">
+            <div class="column-left">
               Новое в нашем блоге
               <h3 class="blog">
                 <a href="#">
@@ -144,7 +144,7 @@
                 </a>
               </h3>
             </div>
-            <div class="communication subscribe">
+            <div class="column-right">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <form action="#" method="POST">
                 <input type="email" id="user-mail" placeholder="Электронная почта">
@@ -152,13 +152,13 @@
               </form>   
             </div>
           </div>
-        </div>
+        
       </div>
 
       <div class="map-contacts">
         <!---Реализацию карты посмотреть здесь http://sm-kommunalka.ru/-->
         <div class="wrapper">
-          <div class="container clearfix">
+          <div class="row clearfix">
             <div class="contacts">
               <p>Адрес главного офиса<br>
               и офлайн магазина:</p>
@@ -175,8 +175,8 @@
 
     <footer class="main-footer">
       <div class="wrapper">
-        <div class="container clearfix">
-          <div class="column-left">
+        <div class="row clearfix">
+          <div class="footer-left">
             <div class="social-footer">
               <a class="btn-social btn-social-tw" href="#">Твиттер</a>
               <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
