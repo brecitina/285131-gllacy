@@ -1,11 +1,15 @@
 body {
+  width: 1200px;
+  /*max-width: 1200px;
+  min-width: 900px;*/
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Bold";
+  font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
   background-color: #849d8f;
 }
-
+/* пока уберем
 h1,
 h3 {
   font-size: 35px;
@@ -15,14 +19,13 @@ h3 {
 h2 {
   font-size: 60px;
   line-height: 60px;
-}
+}*/
 
 .wrapper {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
   outline: 2px solid #ffff00;
-
 }
 
 .row {
@@ -48,7 +51,6 @@ h2 {
   float: left;
   width: 23.275%;
   margin-right: 2.3%;
-  margin-top: 40px;
   outline: 2px solid chocolate;
 }
 
@@ -56,8 +58,8 @@ h2 {
   margin-right: 0;
 }
 
-.cell:nth-child(-n+4) {
-  margin-top: 0;
+.cell:nth-child(n+5) {
+  margin-top: 40px;
 }
 
 
@@ -70,63 +72,142 @@ h2 {
 .main-nav {
   float: left;
   width: 74.425%;
+  padding-top: 9px; 
   outline: 2px solid #ff0000;
+}
+
+.main-nav * {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.main-nav img {
+  margin-left: -3px; 
+}
+
+.main-nav ul {
+  margin-left: 8px;
+  list-style: none;
+}
+
+.main-nav-item {
+  margin-top: -4px;
+  padding: 7px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  outline: 2px solid pink;
 }
 
 .user-block {
   float: right;
   width: 23.275%;
+  padding-top: 23px;
+  text-align: right;
   outline: 2px solid #ff0000;
 }
 
+.user-block * {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: top;
+  background-color: #a1b4a9;
+  border-radius: 16px;
+  outline: 2px solid pink;
+}
+
+.user-block .searshinput {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-block .searshinput::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -431px -5px;
+}
+
+.user-block .enter,
+.user-block .all-products {
+  position: relative;
+  margin-left: 7px;
+  padding: 8px 16px 8px 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.user-block .enter::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -338px -5px;
+}
+
+.user-block .all-products {
+  min-width: 56px;
+}
+
+.user-block .all-products::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -205px -5px;
+}
+
+/* лэйбл можно еще прикрутить абсолютно, сделав строку хэдера относительно позиционированной*/
 .header-lable {
   float: right;
-  clear: right;
+  margin-top: 18px;
   width: 23.275%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
   outline: 2px solid #ff0000;
 }
+
+.header-lable span {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/* //////////////////////////////////////////////////////////*/
+
+
 
 /*Скрою слайдер, т.к. пока непонятно, как его писать*/
 .promo {
   display: none;
 }
-/* заменила на .row
-.specials,
-.popular,
-.features,
-.communication-items {
-  margin-bottom: 40px; для .communication выпадет за родительский контейнер wrapper
-  outline: 2px solid #ff0000;
-}*/
-
-/* заменила на .column-left
-.spacial-item,
-.features-column,
-.communication {
-  float: left;
-  width: 48.85%;
-  outline: 2px solid #ff00ff;
-} */
-
-/* Заменила на .column-right
-.spacial-item:last-child,
-.features-column:last-child,
-.communication:last-child {
-  float: right;
-}*/
-
-
-/* Заменила на .cell
-.popular-item {
-  float: left;
-  width: 23.275%;
-  margin-right: 2.3%;
-  outline: 2px solid #ff00ff;
-}
-
-.popular-item:last-child {
-  margin-right: 0;
-}*/
 
 .map-contacts {
   background-color: #00aa00;
@@ -193,13 +274,6 @@ h2 {
   outline: 2px solid #00ff00;
 }
 
-/* Заменила на .row
-.filters {
-  margin-top: 33px;
-  margin-bottom: 40px;
-  outline: 2px solid #ff0000;
-}*/
-
 .filter {
   display: inline-block;
   margin-right: 16px;
@@ -235,23 +309,6 @@ h2 {
   margin-bottom: 80px;
   outline: 2px solid #ff0000;
 }
-
-/* Заменила на .cell
-.catalog-item {
-  float: left;
-  width: 23.275%;
-  margin-right: 2.3%;
-  margin-bottom: 40px;
-  outline: 2px solid blue;
-}
-
-.catalog-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.catalog-item:nth-child(n+8) {
-  margin-bottom: 0;
-}*/
 
 .paginator {
   float: right;
