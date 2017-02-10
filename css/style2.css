@@ -1,7 +1,6 @@
 body {
-  width: 1200px;
-  /*max-width: 1200px;
-  min-width: 900px;*/
+  max-width: 1200px;
+  min-width: 900px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -35,19 +34,22 @@ h2 {
   outline: 2px solid green;
 }
 
-.column-left {
+.column-left,
+.column-right {
   float: left;
+  box-sizing: border-box;
   width: 48.85%;
+  padding: 16px 21px 21px 19px;
+  border-radius: 12px;
   outline: 2px solid pink;
 }
 
 .column-right {
   float: right;
-  width: 48.85%;
-  outline: 2px solid pink;
 }
 
 .cell {
+  position: relative;
   float: left;
   width: 23.275%;
   margin-right: 2.3%;
@@ -62,6 +64,9 @@ h2 {
   margin-top: 40px;
 }
 
+.cell a {
+  text-decoration: none;
+}
 
 .clearfix::after {
   content: "";
@@ -69,9 +74,44 @@ h2 {
   clear: both;
 }
 
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 100px; /*каждой кнопке задаем свою ширину*/
+  height: 44px;
+  margin: 0;
+  padding: 9px 14px 11px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76); 
+  color: #ffffff;
+  background-color: #ec583c;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 22px;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64); 
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #f07a63;
+  background-image: linear-gradient(to top, #ec6f5e, #f58669);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1); 
+}
+
+.btn:active {
+  color: #ffffff;
+  background-color: #db5338;
+  background-image: linear-gradient(to bottom, #d74632, #e1613e);
+  box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 1); 
+}
+
 .main-nav {
   float: left;
-  width: 74.425%;
+  width: 550px;
   padding-top: 9px; 
   outline: 2px solid #ff0000;
 }
@@ -106,7 +146,7 @@ h2 {
 
 .user-block {
   float: right;
-  width: 23.275%;
+  width: 293px;
   padding-top: 23px;
   text-align: right;
   outline: 2px solid #ff0000;
@@ -186,8 +226,9 @@ h2 {
 /* лэйбл можно еще прикрутить абсолютно, сделав строку хэдера относительно позиционированной*/
 .header-lable {
   float: right;
+  clear: both;
   margin-top: 18px;
-  width: 23.275%;
+  width: 293px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -200,14 +241,159 @@ h2 {
   line-height: 32px;
 }
 
-/* //////////////////////////////////////////////////////////*/
-
-
-
 /*Скрою слайдер, т.к. пока непонятно, как его писать*/
 .promo {
   display: none;
 }
+
+.specials {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.specials h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.specials p {
+  margin: 0;
+}
+
+.specials .column-left {
+  position: relative;
+  min-height: 229px;
+  color: #ffffff;
+  background-color: #be1c42;
+  background-image: url("../img/raspberries-fon.jpg");
+  background-repeat: no-repeat;
+}
+
+.specials .column-right {
+  position: relative;
+  min-height: 229px;
+  color: #ffffff;
+  background-color: #4e3125;
+  background-image: url("../img/chocolate-fon.jpg");
+  background-repeat: no-repeat;
+}
+
+.specials .btn {
+  position: absolute;
+  right: 21px;
+  bottom: 21px;
+  height: 46px;
+  padding: 10px 22px 10px;
+} 
+
+.cell .background-hover {
+  display: none;
+}
+
+.cell:hover .background-hover {
+  position: absolute;
+  top: -9px;
+  transform: translate(-4%, 0);
+  z-index: -1;
+  display: block;
+  width: 110%;
+  height: 130%;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.cell:hover .btn {
+  position: absolute;
+  right: 50%;
+  bottom: 17px;
+  transform: translate(50%, 0);
+  min-width: 193px;
+  padding: 9px 12px 11px;  
+}
+
+.cell:hover {
+  z-index: 10;
+}
+
+.cell img {
+  width: 100%; 
+  max-width: 267px; 
+  min-width: 200px; 
+  max-height: 267px; 
+  min-height: 200px;
+  border-radius: 50%;
+}
+
+.cell .price {
+  margin-top: -65px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+  filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+}
+
+.price span {
+  position: relative;
+  padding-right: 30px;
+  font-size: 45px;
+}
+
+.price span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 27px;
+  height: 32px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -394px -5px;
+}
+
+.cell p {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 7px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.cell:hover p {
+  text-decoration: none;
+}
+
+.popular .cell::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -267px -5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .map-contacts {
   background-color: #00aa00;
@@ -217,7 +403,6 @@ h2 {
 .map-contacts .row {
   margin-bottom: 0;
 }
-
 
 .contacts {
   float: right;
