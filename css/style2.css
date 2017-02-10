@@ -385,6 +385,74 @@ h2 {
   background-position: -267px -5px;
 }
 
+.features {
+  padding: 23px 0 25px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #323232;
+  background-color: #ede2cd;
+  background-image: url("../img/wafer-fon3.jpg");
+  background-repeat: no-repeat;
+  border-radius: 12px; 
+}
+
+.features p {
+  margin: 0 120px 0 18px;
+}
+
+.features .column-left,
+.features .column-right {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.features .features-item {
+  position: relative;
+  margin: 0;
+  margin-top: 10px;
+  padding: 12px 0 0 56px;
+}
+
+.column-left .features-item {
+  padding-left: 75px;
+}
+
+.column-right .features-item {
+  padding-right: 30px;
+}
+
+.features .features-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 49px;
+  background-image: url("../img/spritesheet.png");
+}
+
+.features .ice-img::before {
+  left: 18px;
+  background-position: -458px -5px;
+}
+
+.features .leaf-img::before {
+  left: 18px;
+  background-position: -517px -5px;
+}
+
+.features .cow-img::before {
+  background-position: -29px -5px;
+}
+
+.features .thermo-img::before {
+  background-position: -744px -5px;
+}
 
 
 
