@@ -39,7 +39,7 @@ h2 {
   float: left;
   box-sizing: border-box;
   width: 48.85%;
-  padding: 16px 21px 21px 19px;
+  padding: 16px 21px 90px 19px;
   border-radius: 12px;
   outline: 2px solid pink;
 }
@@ -284,7 +284,7 @@ h2 {
 .specials .btn {
   position: absolute;
   right: 21px;
-  bottom: 21px;
+  bottom: 24px;
   height: 46px;
   padding: 10px 22px 10px;
 } 
@@ -454,14 +454,81 @@ h2 {
   background-position: -744px -5px;
 }
 
+.communication-items .column-left {
+  min-height: 220px;
+  padding: 23px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  background-color: #ffffff;
+  background-image: url("../img/berry-fon.jpg");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
 
+.communication-items h3 {
+  margin: 4px 0;
+  width: 310px;
+}
 
+.communication-items .blog {
+  padding-right: 10px;
+  padding-top: 1px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #353535;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
 
+.communication-items .column-right {
+  padding: 6px;
+  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
+}
 
+.communication-items .fon {
+  position: relative;
+  box-sizing: border-box;
+  min-height:  208px;
+  padding: 28px 21px 92px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  border-radius: 12px;
+}
 
+.communication-items p {
+  margin: 0;
+}
 
+.communication-items .btn {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  padding: 9px 17px 11px;
+  border: none;
+}
 
+.communication-items .input-group {
+  position: absolute;
+  right: 159px;
+  left: 21px;
+  bottom: 35px;
+}
 
+.communication-items input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+}
 
 .map-contacts {
   background-color: #00aa00;
@@ -474,11 +541,70 @@ h2 {
 
 .contacts {
   float: right;
+  box-sizing: border-box;
   width: 302px;
   margin-top: 62px;
   margin-bottom: 62px;
+  padding: 29px 25px 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background-color: #fefefe;
+  border-radius: 14px;
   outline: 2px solid #ff0000;
 }
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0;
+}
+
+.contacts span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts p.phone {
+   margin-top: 18px;
+   margin-bottom: 5px;
+}
+
+.contacts span.phone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contacts .btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-footer {
   padding: 20px 0;
