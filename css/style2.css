@@ -469,9 +469,6 @@ body {
   line-height: 30px;
   color: #353535;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
 }
 
 .communication-items .column-right {
@@ -716,7 +713,7 @@ body {
 .copiright-footer {
   float: right;
   box-sizing: border-box;
-  width: 190px;
+  width: 192px;
   padding-left: 0;
   font-size: 12px;
   outline: 2px solid #ff00ff;
