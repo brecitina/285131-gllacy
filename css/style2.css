@@ -8,17 +8,6 @@ body {
   color: #ffffff;
   background-color: #849d8f;
 }
-/* пока уберем
-h1,
-h3 {
-  font-size: 35px;
-  line-height: 41px;
-}
-
-h2 {
-  font-size: 60px;
-  line-height: 60px;
-}*/
 
 .wrapper {
   min-width: 900px;
@@ -394,7 +383,7 @@ h2 {
   color: #323232;
   background-color: #ede2cd;
   background-image: url("../img/wafer-fon3.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border-radius: 12px; 
 }
 
@@ -583,34 +572,19 @@ h2 {
   margin-top: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* тут должны быть стили для каталога*/
 
 .main-footer {
-  padding: 20px 0;
+  padding: 20px 0 25px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
   outline: 2px solid #0000ff;
 }
 
+.main-footer .row {
+  margin-bottom: 0;
+}
 .footer-left {
   box-sizing: border-box;
   float: left;
@@ -621,14 +595,114 @@ h2 {
 
 .social-footer {
   float: left;
-  width: 200px;
+  width: 240px;
   outline: 2px solid #0ff0f0;
+}
+
+.social-footer .btn-social {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-top: 16px;
+  margin-right: 8px;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: top;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
+}
+
+.social-footer .btn-social::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  filter: opacity(0.8);
+}
+
+.social-footer .btn-social-tw::before {
+  background-position: -660px -5px;
+}
+
+.social-footer .btn-social-inst::before {
+  background-position: -618px -5px;
+}
+
+.social-footer .btn-social-fb::before {
+  background-position: -576px -5px;
+}
+
+.social-footer .btn-social-vk::before {
+  background-position: -702px -5px;
+}
+
+.social-footer .btn-social:hover {
+  border-color: #dae2de;
+}
+
+.social-footer .btn-social:hover::before {
+  filter: opacity(1);
+}
+
+.social-footer .btn-social:active {
+  border-color: #dae2de;
+  box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 1); 
+}
+
+.social-footer .btn-social:active::before {
+  filter: opacity(0.7);
+  z-index: -1;
 }
 
 .column-1 {
   float: right;
   width: 135px;
   outline: 2px solid #0ff0f0;
+}
+
+.nav-footer ul {
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-footer li {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.nav-footer li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.column-1 li {
+  padding-left: 24px;
+}
+
+.nav-footer .love::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -369px -5px;
 }
 
 .column-2 {
@@ -641,9 +715,27 @@ h2 {
 
 .copiright-footer {
   float: right;
+  box-sizing: border-box;
   width: 190px;
+  padding-left: 0;
+  font-size: 12px;
   outline: 2px solid #ff00ff;
 }
+
+.copiright-footer .htmlacademy-logo {
+  display: block;
+  width: 108px;
+  height: 38px;
+  margin-bottom: 3px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -87px -5px;
+}
+
+.copiright-footer a {
+  color: #fefefe;
+}
+
 
 /*Дальше стили для каталога*/
 
