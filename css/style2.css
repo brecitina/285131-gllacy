@@ -517,7 +517,9 @@ body {
 }
 
 .map-contacts {
-  background-color: #00aa00;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center -25%;
   outline: 2px solid #00ff00;
 }
 
