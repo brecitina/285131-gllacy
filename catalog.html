@@ -46,40 +46,40 @@
           <div class="row filters">
             <form action="#" method="GET">
               <div class="filter sorting">
-                <label for="sorting">Сортировка:</label>
-                <select id="sorting" name="filter-sorting">
+                <span>Сортировка:</span>
+                <select class="filter-group" name="filter-sorting">
                   <option value="popularity">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                 </select>
               </div>
-              <div class="filter price"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
-                Цена: 100 руб. &#8212; 500 руб.
+              <div class="filter rate"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
+                <span>Цена: 100 руб. &#8212; 500 руб.</span>
               </div>
               <div class="filter fatness">
-                Жирность: 
-                <ul>
-                  <li><label>
-                    <input type="radio" name="filter-fatness" value="0%">
-                    0%
-                  </label></li>
-                  <li><label>
-                    <input type="radio" name="filter-fatness" value="to 10%">
-                    до 10%
-                  </label></li>
-                  <li><label>
-                    <input type="radio" name="filter-fatness" value="to 30%">
-                    до 30%
-                  </label></li>
-                  <li><label>
-                    <input type="radio" name="filter-fatness" value="more 30%">
-                    выше 30%
-                  </label></li>
+                <span>Жирность:</span> 
+                <ul class="filter-group">
+                  <li>
+                    <input id="fatness-0" type="radio" name="filter-fatness" value="0%">
+                    <label for="fatness-0">0%</label>
+                  </li>
+                  <li>
+                    <input id="fatness-10" type="radio" name="filter-fatness" value="to 10%" checked>
+                    <label for="fatness-10">до 10%</label>
+                  </li>
+                  <li>
+                    <input id="fatness-30" type="radio" name="filter-fatness" value="to 30%">
+                    <label for="fatness-30">до 30%</label>
+                  </li>
+                  <li>
+                    <input id="fatness-more" type="radio" name="filter-fatness" value="more 30%">
+                    <label for="fatness-more">выше 30%</label>
+                  </li>
                 </ul>
               </div>
               <div class="filter toppings">
-                Наполнители:
+                <span>Наполнители:</span>
                 <ul>
                   <li>
                     <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
