@@ -49,10 +49,6 @@ body {
   margin-right: 0;
 }
 
-.cell:nth-child(n+5) {
-  margin-top: 40px;
-}
-
 .cell a {
   text-decoration: none;
 }
@@ -212,11 +208,14 @@ body {
   background-position: -205px -5px;
 }
 
-/* лэйбл можно еще прикрутить абсолютно, сделав строку хэдера относительно позиционированной*/
+.main-header .row {
+  position: relative;
+}
+
 .header-lable {
-  float: right;
-  clear: both;
-  margin-top: 18px;
+  position: absolute;
+  top: 72px;
+  right: 2.3%;
   width: 293px;
   font-weight: 700;
   font-size: 14px;
@@ -571,7 +570,151 @@ body {
   margin-top: 25px;
 }
 
-/* тут должны быть стили для каталога*/
+/* Cтили для каталога*/
+.breadcrumbs {
+  margin: 0;
+  margin-top: -16px;
+  margin-bottom: 7px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  list-style: none;
+  outline: 2px solid #00ff00;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  position: relative;
+  padding-right: 21px;
+  color: #ffffff;
+}
+
+
+.breadcrumbs a::after {
+  content: "»";
+  position: absolute;
+  right: 8px;
+  text-decoration: none;
+}
+
+
+
+
+.filter {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 17px;
+  vertical-align: bottom;
+  outline: 2px solid #ff00ff;
+}
+
+.filters .sorting {
+  width: 194px;
+}
+
+.filters .price {
+  width: 218px;
+}
+
+.filters .fatness {
+  width: 416px;
+  margin-right: 0;
+}
+
+.filters .toppings {
+  width: 703px;
+  margin-bottom: 0;
+}
+
+.filters button[type="submit"] {
+  width: 145px;
+  margin-bottom: 0;
+}
+
+.catalog {
+  margin-bottom: 80px;
+  outline: 2px solid #ff0000;
+}
+
+.paginator {
+  float: right;
+  width: 200px;
+  outline: 2px solid #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-footer {
   padding: 20px 0 25px;
@@ -736,52 +879,3 @@ body {
 }
 
 
-/*Дальше стили для каталога*/
-
-.breadcrumbs {
-  margin-top: -16px;
-  margin-bottom: 7px;
-  outline: 2px solid #00ff00;
-}
-
-.filter {
-  display: inline-block;
-  margin-right: 16px;
-  margin-bottom: 17px;
-  vertical-align: bottom;
-  outline: 2px solid #ff00ff;
-}
-
-.filters .sorting {
-  width: 194px;
-}
-
-.filters .price {
-  width: 218px;
-}
-
-.filters .fatness {
-  width: 416px;
-  margin-right: 0;
-}
-
-.filters .toppings {
-  width: 703px;
-  margin-bottom: 0;
-}
-
-.filters button[type="submit"] {
-  width: 145px;
-  margin-bottom: 0;
-}
-
-.catalog {
-  margin-bottom: 80px;
-  outline: 2px solid #ff0000;
-}
-
-.paginator {
-  float: right;
-  width: 200px;
-  outline: 2px solid #ff0000;
-}
