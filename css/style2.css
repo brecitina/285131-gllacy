@@ -84,14 +84,14 @@ body {
   color: #ffffff;
   background-color: #f07a63;
   background-image: linear-gradient(to top, #ec6f5e, #f58669);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1); 
+  box-shadow: 0px 2px 2px 0px #ac1000; 
 }
 
 .btn:active {
   color: #ffffff;
   background-color: #db5338;
   background-image: linear-gradient(to bottom, #d74632, #e1613e);
-  box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 1); 
+  box-shadow: inset 0px 2px 2px 0px #ac1000;
 }
 
 .main-nav {
@@ -630,32 +630,27 @@ main h1 {
 }
 
 .filters .sorting {
-  width: 194px;
+  width: 189px;
 }
 
-.filters .price {
-  width: 218px;
+.filters .rate {
+  width: 215px;
 }
 
 .filters .fatness {
-  width: 416px;
+  width: 410px;
   margin-right: 0;
 }
 
 .filters .toppings {
-  width: 703px;
-  margin-bottom: 0;
-}
-
-.filters button[type="submit"] {
-  width: 145px;
+  width: 700px;
   margin-bottom: 0;
 }
 
 .filter {
   display: inline-block;
-  margin-right: 16px;
-  margin-bottom: 17px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   vertical-align: bottom;
   font-size: 0;
   line-height: 0;
@@ -677,7 +672,7 @@ main h1 {
 
 
 .filter span {
-  margin-left: 16px;
+  margin-left: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -691,7 +686,7 @@ main h1 {
   padding-left: 14px;
   color: #ffffff;
   background-color: #aabab0;
-  border-radius: 14px;
+  border-radius: 18px;
   border: none;
 }
 
@@ -704,10 +699,44 @@ main h1 {
   background-color: #ffffff;
 }
 
+.rate .filter-group {
+  padding-top: 16px;
+}
+
+.rate .rate-axis {
+  position: relative;
+  width: 187px;
+  height: 4px;
+  background-color: #d1dad3;
+}
+
+.rate-axis .range-slider {
+  position: absolute;
+  left: 30px;
+  right: 62px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.rate-axis .range-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -9px;
+  left: 19px; 
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rate-axis .range-handle:last-child {
+  left: 117px;  
+}
+
 .fatness li {
   display: inline-block;
   margin-right: 18px;
-  padding-top: 10px;
+  padding-top: 9px;
   vertical-align: top;
 }
 
@@ -719,7 +748,8 @@ main h1 {
   display: none;
 }
 
-.fatness label {
+.fatness label,
+.toppings label {
   position: relative;
   padding-left: 31px;
 }
@@ -760,6 +790,84 @@ main h1 {
 .fatness input:disabled + label::after {
   opacity: 0.4;
 }
+
+.toppings li {
+  display: inline-block;
+  margin-right: 22px;
+  padding-top: 8px;
+  vertical-align: top;
+}
+
+.toppings li:last-child {
+  margin-right: 0;
+} 
+
+.toppings input {
+  display: none;
+}
+
+.toppings label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.toppings label:hover::before {
+  border: 2px solid #ffffff;
+}
+
+.toppings input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 5px;
+  width: 14px;
+  height: 10px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -5px -5px;
+}
+
+.toppings input:disabled + label::before,
+.toppings input:disabled + label::after {
+  opacity: 0.4;
+}
+
+.filters button[type="submit"] {
+  width: 145px;
+  height: 36px;
+  margin-left: -6px;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #aabab0;
+  border: 2px solid #fbfcfb;
+  border-radius: 18px;
+}
+
+.filters button[type="submit"]:hover {
+  color: #323232;
+  background-color: #fbfcfb;
+}
+
+.filters button[type="submit"]:active {
+  background-color: #eaeaea;
+  border: none;
+  box-shadow: inset 0 2px 1px 0px #696969;
+} 
+
+
+
+
+
 
 
 
@@ -934,7 +1042,7 @@ main h1 {
 
 .social-footer .btn-social:active {
   border-color: #dae2de;
-  box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 1); 
+  box-shadow: inset 0px 2px 1px 0px #888888; 
 }
 
 .social-footer .btn-social:active::before {

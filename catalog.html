@@ -56,6 +56,13 @@
               </div>
               <div class="filter rate"><!--- Оформление - курс Плавные переходы. Переключатели. Диапазон range- курс Формы и хтмл5.  Реализация есть на kari.com-->    
                 <span>Цена: 100 руб. &#8212; 500 руб.</span>
+                <div class="filter-group">
+                  <div class="rate-axis">
+                    <div class="range-slider"></div>
+                    <div class="range-handle"></div>
+                    <div class="range-handle"></div>
+                  </div>
+                </div>
               </div>
               <div class="filter fatness">
                 <span>Жирность:</span> 
@@ -80,13 +87,13 @@
               </div>
               <div class="filter toppings">
                 <span>Наполнители:</span>
-                <ul>
+                <ul class="filter-group">
                   <li>
-                    <input id="topping-chocolate" type="checkbox" name="topping-chocolate">
+                    <input id="topping-chocolate" type="checkbox" name="topping-chocolate" checked>
                     <label for="topping-chocolate">шоколадные</label>
                   </li>
                   <li>
-                    <input id="topping-powder" type="checkbox" name="topping-powder">
+                    <input id="topping-powder" type="checkbox" name="topping-powder" checked disabled>
                     <label for="topping-powder">сахарные присыпки</label>
                   </li>
                   <li>
@@ -102,7 +109,7 @@
                     <label for="topping-jams">джемы</label>
                 </ul>
               </div>
-              <button class="filter" type="submit">Применить</button>
+              <button type="submit">Применить</button>
             </form>
           </div>      
 
