@@ -29,9 +29,23 @@
             </ul>
           </nav>
           <div class="user-block">
-            <div class="searshinput">Что ищем?</div>
-            <a class="enter" href="#">Вход</a>
-            <div class="all-products full">2 товара</div>
+            <ul>
+              <li class="user-item">
+                <div class="searshinput"></div>
+                <form class="user-form" active="/search/" method="GET">
+                  <div class="user-input-group">
+                    <input class="user-input" id="user-search" type="search" name="search" placeholder="Что ищем?" required>
+                    <label for="user-search">Что ищем?</label>
+                  </div>
+                </form>
+              </li>
+              <li class="user-item">
+                <a class="enter" href="#">Вход</a>
+              </li>
+              <li class="user-item">
+                <a class="all-products full" href="#">2 товара</a>
+              </li>
+            </ul>
           </div>
           <div class="header-lable">
             С 10 до 20, ежедневно<br>

@@ -240,15 +240,27 @@ li:not(.sub-current):active > .sub-menu-item {
   outline: 2px solid #ff0000;
 }
 
-.user-block .searshinput,
-.user-block .enter,
-.user-block .all-products {
+.user-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-block .user-item {
+  position: relative;
   display: inline-block;
   margin: 0;
   padding: 0;
+  padding-bottom: 15px;
   font-size: 0;
   line-height: 0;
   vertical-align: top;
+}
+
+.user-block .searshinput,
+.user-block .enter,
+.user-block .all-products {
+  display: block;
   background-color: #a1b4a9;
   border-radius: 16px;
   outline: 2px solid pink;
@@ -258,9 +270,6 @@ li:not(.sub-current):active > .sub-menu-item {
   position: relative;
   width: 32px;
   height: 32px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .user-block .searshinput::before {
@@ -274,13 +283,101 @@ li:not(.sub-current):active > .sub-menu-item {
   background-position: -431px -5px;
 }
 
-.user-block .searshinput:hover {
+.user-item:hover .searshinput {
   background-color: #f8f7f4;
 }
 
-.user-block .searshinput:hover::before {
+.user-item:hover .searshinput::before {
   filter: invert(1);
 }
+
+/* стили для выпадашек с формами*/
+
+.user-form {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  width: 313px; 
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.user-item:hover .user-form {
+  display: block;
+}
+
+
+.user-input-group {
+  position: relative;
+}
+
+.user-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+}
+
+.user-input::-webkit-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.user-input::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+
+.user-input:-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.user-input:-ms-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+
+.user-input:hover {
+  padding: 10px 13px;
+  border: 2px solid #c7c6c5;
+}
+
+.user-input:focus {
+  padding: 10px 13px;
+  border: 2px solid #8fbdec;
+}
+
+.user-input + label {
+  position: absolute;
+  top: -16px;
+  left: 15px;
+  display: inline;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+}
+
+.user-input:invalid + label {
+  display: none;
+}
+
+.user-input:focus + label {
+  color: #5b9ddf;
+  display: inline;
+}
+
+/* стили для выпадашек с формами закончились*/
 
 .user-block .enter,
 .user-block .all-products {
@@ -306,12 +403,12 @@ li:not(.sub-current):active > .sub-menu-item {
   background-position: -338px -5px;
 }
 
-.user-block .enter:hover {
+.user-item:hover .enter {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.user-block .enter:hover::before {
+.user-item:hover .enter::before {
   filter: invert(1);
 }
 
@@ -348,6 +445,15 @@ li:not(.sub-current):active > .sub-menu-item {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.user-item:hover .all-products:not(.full) {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.user-item:hover .all-products:not(.full)::before {
+  filter: invert(1);
 }
 
 .main-header .row {
