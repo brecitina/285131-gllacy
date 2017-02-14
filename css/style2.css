@@ -126,7 +126,7 @@ body {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   font-size: 0;
   line-height: 0;
   vertical-align: middle;
@@ -145,7 +145,7 @@ body {
 
 .main-menu .sub-menu {
   position: absolute;
-  top: 31px;
+  top: 46px;
   left: -6px;
   z-index: 1;
   display: none;
@@ -191,7 +191,7 @@ body {
   background-color: #fbded7;
 }
 
-li:not(.current):hover > .sub-menu-item {
+li:not(.sub-current):hover > .sub-menu-item {
   color: #323232;
 }
 
@@ -199,15 +199,15 @@ li:not(.current):hover > .sub-menu-item {
   background-color: #f6b5a5;
 }
 
-li:not(.current):active > .sub-menu-item {
+li:not(.sub-current):active > .sub-menu-item {
   color: #323232;
 }
 
-.sub-menu li.current {
+.sub-menu li.sub-current {
   background-color: #d07058;
 }
 
-.current .sub-menu-item {
+.sub-current .sub-menu-item {
   color: #ffffff;
 }
 
