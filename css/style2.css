@@ -260,12 +260,23 @@ body {
 }
 
 .user-block .all-products.full {
-   background-color: #f7f6f3;
-   color: #323232;
+  max-width: 87px;
+  color: #323232;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #f7f6f3;
+  overflow: hidden;
 }
 
 .user-block .all-products.full::before {
   background-position: -236px -5px;
+}
+
+.all-products.full {
+  max-width: 87px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .main-header .row {
