@@ -111,7 +111,7 @@ body {
   vertical-align: middle;
 }
 
-.main-nav ul {
+.main-nav .main-menu {
   display: inline-block;
   margin: 0;
   margin-left: 8px;
@@ -122,7 +122,8 @@ body {
   list-style: none;
 }
 
-.main-nav li {
+.main-menu > li {
+  position: relative;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -141,6 +142,76 @@ body {
   border-radius: 16px;
   outline: 2px solid pink;
 }
+
+.main-menu .sub-menu {
+  position: absolute;
+  top: 31px;
+  left: -6px;
+  z-index: 1;
+  display: none;
+  min-width: 142px;
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  list-style: none;
+  overflow: hidden;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu-item {
+  display: block;
+  padding: 9px 21px 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sub-menu-item.first {
+  padding: 10px 21px;
+}
+
+.sub-menu li:first-child::after {
+  content: "";
+  display: block;
+  margin: 0 9px 0 6px;
+  height: 1px;
+  background-color: #d1d0ce;
+}
+
+.sub-menu li:hover {
+  background-color: #fbded7;
+}
+
+li:not(.current):hover > .sub-menu-item {
+  color: #323232;
+}
+
+.sub-menu li:active {
+  background-color: #f6b5a5;
+}
+
+li:not(.current):active > .sub-menu-item {
+  color: #323232;
+}
+
+.sub-menu li.current {
+  background-color: #d07058;
+}
+
+.current .sub-menu-item {
+  color: #ffffff;
+}
+
+
 
 .current .main-nav-item {
   color: #ffffff;
