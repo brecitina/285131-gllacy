@@ -211,8 +211,6 @@ li:not(.sub-current):active > .sub-menu-item {
   color: #ffffff;
 }
 
-
-
 .current .main-nav-item {
   color: #ffffff;
   text-decoration: none;
@@ -235,15 +233,12 @@ li:not(.sub-current):active > .sub-menu-item {
 .user-block {
   float: right;
   width: 293px;
-  padding-top: 23px;
-  text-align: right;
-  outline: 2px solid #ff0000;
-}
-
-.user-block ul {
   margin: 0;
   padding: 0;
+  padding-top: 23px;
+  text-align: right;
   list-style: none;
+  outline: 2px solid #ff0000;
 }
 
 .user-block .user-item {
@@ -292,6 +287,15 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 /* стили для выпадашек с формами*/
+.user-item:hover::before {
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+  height: 37px;
+}
 
 .user-form {
   position: absolute;
@@ -300,7 +304,7 @@ li:not(.sub-current):active > .sub-menu-item {
   z-index: 1;
   display: none;
   width: 313px; 
-  padding: 20px 15px;
+  padding: 20px 15px 0;
   background-color: #f8f7f4;
   border-radius: 4px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -310,7 +314,6 @@ li:not(.sub-current):active > .sub-menu-item {
   display: block;
 }
 
-
 .user-input-group {
   position: relative;
 }
@@ -319,6 +322,7 @@ li:not(.sub-current):active > .sub-menu-item {
   box-sizing: border-box;
   width: 100%;
   height: 44px;
+  margin-bottom: 20px;
   padding: 10px 14px;
   font-weight: 700;
   font-size: 16px;
@@ -410,6 +414,34 @@ li:not(.sub-current):active > .sub-menu-item {
 
 .user-item:hover .enter::before {
   filter: invert(1);
+}
+
+.enter + .user-form {
+  width: 239px;
+  padding: 20px 19px 20px;
+}
+
+.user-form .btn {
+  float: left;
+  height: 44px;
+  margin-right: 20px;
+  border: none;
+}
+
+.user-form a {
+  float: left;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.user-form a:hover  {
+  color: #e84d37;
+}
+
+.user-form a:active  {
+  color: #e84d37;
 }
 
 .user-block .all-products {

@@ -28,25 +28,36 @@
               <li><a class="main-nav-item" href="#">О Компании</a></li>
             </ul>
           </nav>
-          <div class="user-block">
-            <ul>
-              <li class="user-item">
-                <div class="searshinput"></div>
-                <form class="user-form" active="/search/" method="GET">
-                  <div class="user-input-group">
-                    <input class="user-input" id="user-search" type="search" name="search" placeholder="Что ищем?" required>
-                    <label for="user-search">Что ищем?</label>
-                  </div>
-                </form>
-              </li>
-              <li class="user-item">
-                <a class="enter" href="#">Вход</a>
-              </li>
-              <li class="user-item">
-                <a class="all-products full" href="#">2 товара</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="user-block">
+            <li class="user-item">
+              <div class="searshinput"></div>
+              <form class="user-form" active="/search/" method="GET">
+                <div class="user-input-group">
+                  <input class="user-input" id="user-search" type="search" name="search" placeholder="Что ищем?" required>
+                  <label for="user-search">Что ищем?</label>
+                </div>
+              </form>
+            </li>
+            <li class="user-item">
+              <a class="enter" href="#">Вход</a>
+              <form class="user-form clearfix" action="#" method="POST">
+                <div class="user-input-group">
+                  <input class="user-input" id="user-login" type="email" name="login" placeholder="Электронная почта" required>
+                  <label for="user-login">Электронная почта</label>
+                </div>
+                <div class="user-input-group">
+                  <input class="user-input" id="user-password" type="password" name="password" placeholder="Пароль" required>
+                  <label for="user-login">Пароль</label>
+                </div>
+                <button class="btn" type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </li>
+            <li class="user-item">
+              <a class="all-products full" href="#">2 товара</a>
+            </li>
+          </ul>
           <div class="header-lable">
             С 10 до 20, ежедневно<br>
             <span>8 812 450-25-25</span>
