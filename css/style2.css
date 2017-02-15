@@ -523,7 +523,7 @@ li:not(.sub-current):active > .sub-menu-item {
   background-image: url("../img/spritesheet.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: -802px -5px;
+  background-position: -840px -5px;
   border: 0;
   cursor: pointer;
 }
@@ -827,7 +827,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features .thermo-img::before {
-  background-position: -744px -5px;
+  background-position: -782px -5px;
 }
 
 .communication-items .column-left {
@@ -1380,58 +1380,6 @@ main h1 {
   filter: invert(1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Стили каталога закончились*/
 
 
@@ -1444,7 +1392,18 @@ main h1 {
 }
 
 .main-footer .row {
+  position: relative;
   margin-bottom: 0;
+}
+
+.main-footer .row::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  right: 2.3%;
+  left: 2.3%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer a:hover {
@@ -1454,7 +1413,6 @@ main h1 {
 .main-footer a:active {
   color: #ffbc9e;
 }
-
 
 .footer-left {
   box-sizing: border-box;
@@ -1500,19 +1458,19 @@ main h1 {
 }
 
 .social-footer .btn-social-tw::before {
-  background-position: -660px -5px;
+  background-position: -698px -5px;
 }
 
 .social-footer .btn-social-inst::before {
-  background-position: -618px -5px;
+  background-position: -656px -5px;
 }
 
 .social-footer .btn-social-fb::before {
-  background-position: -576px -5px;
+  background-position: -614px -5px;
 }
 
 .social-footer .btn-social-vk::before {
-  background-position: -702px -5px;
+  background-position: -740px -5px;
 }
 
 .social-footer .btn-social:hover {
