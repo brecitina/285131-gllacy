@@ -56,6 +56,26 @@
             </li>
             <li class="user-item">
               <a class="all-products full" href="#">2 товара</a>
+              <form class="user-form clearfix" action="#" method="POST">
+                <table class="products-table">
+                  <tr class="products-item creamy">
+                    <td><button class="product-delete" type="buttom" title="Закрыть">Закрыть</button></td>
+                    <td class="product-mini"></td>
+                    <td class="product-name">Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr class="products-item strawberry">
+                    <td><button class="product-delete" type="buttom" title="Закрыть">Закрыть</button></td>
+                    <td class="product-mini"></td>
+                    <td class="product-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <div class="products-sum">Итого: 750 руб.</div>
+                <button class="btn" type="submit">Оформить заказ</button>
+              </form>
             </li>
           </ul>
           <div class="header-lable">
@@ -102,20 +122,20 @@
                 <span>Жирность:</span> 
                 <ul class="filter-group">
                   <li>
-                    <input id="fatness-0" type="radio" name="filter-fatness" value="0%">
-                    <label for="fatness-0">0%</label>
+                    <input id="fatness-0" type="radio" name="filter-fatness" value="0%" >
+                    <label for="fatness-0" title="Отметить">0%</label>
                   </li>
                   <li>
                     <input id="fatness-10" type="radio" name="filter-fatness" value="to 10%" checked>
-                    <label for="fatness-10">до 10%</label>
+                    <label for="fatness-10" title="Отметить">до 10%</label>
                   </li>
                   <li>
                     <input id="fatness-30" type="radio" name="filter-fatness" value="to 30%">
-                    <label for="fatness-30">до 30%</label>
+                    <label for="fatness-30" title="Отметить">до 30%</label>
                   </li>
                   <li>
                     <input id="fatness-more" type="radio" name="filter-fatness" value="more 30%">
-                    <label for="fatness-more">выше 30%</label>
+                    <label for="fatness-more" title="Отметить">выше 30%</label>
                   </li>
                 </ul>
               </div>
@@ -127,7 +147,7 @@
                     <label for="topping-chocolate">шоколадные</label>
                   </li>
                   <li>
-                    <input id="topping-powder" type="checkbox" name="topping-powder" checked disabled>
+                    <input id="topping-powder" type="checkbox" name="topping-powder" checked>
                     <label for="topping-powder">сахарные присыпки</label>
                   </li>
                   <li>

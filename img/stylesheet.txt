@@ -105,3 +105,9 @@
     height: 49px;
     background-position: -744px -5px;
 }
+
+.sprite-x-icon {
+    width: 11px;
+    height: 11px;
+    background-position: -802px -5px;
+}

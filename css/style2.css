@@ -418,14 +418,16 @@ li:not(.sub-current):active > .sub-menu-item {
 
 .enter + .user-form {
   width: 239px;
-  padding: 20px 19px 20px;
+  padding: 20px 19px 0;
 }
 
 .user-form .btn {
   float: left;
   height: 44px;
   margin-right: 20px;
+  margin-bottom: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .user-form a {
@@ -487,6 +489,108 @@ li:not(.sub-current):active > .sub-menu-item {
 .user-item:hover .all-products:not(.full)::before {
   filter: invert(1);
 }
+
+.all-products + .user-form {
+  width: 510px;
+}
+
+/*Стили для корзины*/
+.all-products.full + .user-form .products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table td {
+  height: 27px;
+  padding: 8px 5px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  vertical-align: top;
+  text-align: center;
+}
+
+.products-table span {
+  color: #999999;
+}
+
+.products-table .product-delete {
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  vertical-align: top;
+  background-image: url("../img/spritesheet.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -802px -5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.products-table .product-mini {
+  position: relative;
+  width: 31px;
+}
+
+.products-table .product-mini::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  display: block;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+} 
+
+.creamy .product-mini::before {
+  background-image: url("../img/creamy-item-icon.png");
+}
+
+.strawberry .product-mini::before {
+  background-image: url("../img/strawberry-item-icon.png");
+}
+
+.products-table .product-name {
+  width: 226px;
+  padding: 8px 10px 16px;
+  text-align: left;
+}
+
+.products-table td:last-child {
+  box-sizing: border-box;
+  width: 87px;
+}
+
+.all-products + .user-form .products-sum {
+  position: relative;
+  float: right;
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+}
+
+.all-products + .user-form .products-sum::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: block;
+  width: 510px;
+  height: 1px;
+  background-color: #cacac7;
+}
+
+.all-products + .user-form .btn {
+  float: right;
+  clear: right;
+  margin-right: 0;
+}
+
+/*закончились стили для корзины*/
 
 .main-header .row {
   position: relative;
@@ -790,6 +894,7 @@ li:not(.sub-current):active > .sub-menu-item {
   bottom: 35px;
   padding: 9px 17px 11px;
   border: none;
+  cursor: pointer;
 }
 
 .communication-items .input-group {
