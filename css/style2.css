@@ -833,7 +833,8 @@ li:not(.sub-current):active > .sub-menu-item {
   background-position: right 0;
 }
 
-.communication-items h3 {
+.communication-items a {
+  display: block;
   margin: 4px 0;
   width: 310px;
 }
@@ -878,30 +879,36 @@ li:not(.sub-current):active > .sub-menu-item {
   margin: 0;
 }
 
-.communication-items .btn {
+.communication-items form {
   position: absolute;
-  right: 20px;
+  left: 0;
   bottom: 35px;
-  padding: 9px 17px 11px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.communication-items .btn {
+  float: right;
+  padding: 9px 19px 11px;
   border: none;
   cursor: pointer;
 }
-
+/*
 .communication-items .input-group {
   position: absolute;
   right: 159px;
   left: 21px;
-  bottom: 35px;
 }
 
 .communication-items input {
   box-sizing: border-box;
   width: 100%;
-  padding: 11px 15px;
+  padding: 13px 12px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
 }
-
+*/
 .map-contacts {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
@@ -1052,6 +1059,7 @@ main h1 {
   height: 36px;
   margin-top: 7px;
   padding-left: 14px;
+  padding-top: 8px;
   color: #ffffff;
   background-color: #aabab0;
   border-radius: 18px;
@@ -1059,7 +1067,7 @@ main h1 {
 }
 
 .sorting .filter-group {
-  padding-left: 11px;
+  padding-top: 0;
 }
 
 .sorting .filter-group:hover {
@@ -1104,7 +1112,6 @@ main h1 {
 .fatness li {
   display: inline-block;
   margin-right: 18px;
-  padding-top: 9px;
   vertical-align: top;
 }
 
@@ -1162,7 +1169,6 @@ main h1 {
 .toppings li {
   display: inline-block;
   margin-right: 22px;
-  padding-top: 8px;
   vertical-align: top;
 }
 
