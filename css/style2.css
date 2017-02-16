@@ -833,8 +833,7 @@ li:not(.sub-current):active > .sub-menu-item {
   background-position: right 0;
 }
 
-.communication-items a {
-  display: block;
+.communication-items p {
   margin: 4px 0;
   width: 310px;
 }
@@ -909,14 +908,12 @@ li:not(.sub-current):active > .sub-menu-item {
   border-radius: 4px;
 }
 */
-.map-contacts {
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: center -25%;
-}
 
 .map-contacts .row {
   margin-bottom: 0;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center -25%;
 }
 
 .contacts {
@@ -1407,13 +1404,6 @@ main h1 {
   color: #ffbc9e;
 }
 
-.footer-left {
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  padding-right: 40px; 
-}
-
 .social-footer {
   float: left;
   width: 240px;
@@ -1482,55 +1472,6 @@ main h1 {
   z-index: -1;
 }
 
-.column-1 {
-  float: right;
-  width: 135px;
-}
-
-.nav-footer ul {
-  margin: 0;
-  margin-top: 14px;
-  padding: 0;
-  list-style: none;
-}
-
-.nav-footer li {
-  position: relative;
-  margin-bottom: 4px;
-}
-
-.nav-footer li:last-child {
-  margin-bottom: 0;
-}
-
-.nav-footer a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.column-1 li {
-  padding-left: 24px;
-}
-
-.nav-footer .love::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 2px;
-  width: 15px;
-  height: 13px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  background-position: -369px -5px;
-}
-
-.column-2 {
-  box-sizing: border-box;
-  float: left;
-  width: 23.275%;
-  margin-left: -8px;
-}
-
 .copiright-footer {
   float: right;
   box-sizing: border-box;
@@ -1553,4 +1494,53 @@ main h1 {
   color: #fefefe;
 }
 
+.footer-nav {
+  width: 346px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav .column-2 {
+  margin-left: -8px;
+}
+
+.footer-nav li {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.footer-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.column-1 li {
+  padding-left: 23px;
+  padding-right: 10px;
+}
+
+.footer-nav .love::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -369px -5px;
+}
 
