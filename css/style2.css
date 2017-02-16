@@ -752,7 +752,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features {
-  padding: 23px 0 25px;
+  padding: 23px 18px 25px;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
@@ -765,7 +765,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features p {
-  margin: 0 120px 0 18px;
+  margin: 0 102px 0 0;
 }
 
 .features .column-left,
@@ -784,14 +784,6 @@ li:not(.sub-current):active > .sub-menu-item {
   padding: 12px 0 0 56px;
 }
 
-.column-left .features-item {
-  padding-left: 75px;
-}
-
-.column-right .features-item {
-  padding-right: 30px;
-}
-
 .features .features-item::before {
   content: "";
   position: absolute;
@@ -803,12 +795,10 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features .ice-img::before {
-  left: 18px;
   background-position: -458px -5px;
 }
 
 .features .leaf-img::before {
-  left: 18px;
   background-position: -517px -5px;
 }
 
