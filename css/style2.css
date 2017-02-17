@@ -73,6 +73,7 @@ body {
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 22px;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64); 
+  outline: none; 
 }
 
 .btn:hover {
@@ -651,16 +652,13 @@ li:not(.sub-current):active > .sub-menu-item {
   padding: 10px 22px 10px;
 } 
 
-.cell .background-hover {
-  display: none;
-}
 
-.cell:hover .background-hover {
+.cell .background-hover {
   position: absolute;
   top: -9px;
   transform: translate(-4%, 0);
   z-index: -1;
-  display: block;
+  display: none;
   width: 110%;
   height: 130%;
   padding: 0;
@@ -669,7 +667,12 @@ li:not(.sub-current):active > .sub-menu-item {
   border-radius: 4px;
 }
 
-.cell:hover .btn {
+.cell:hover .background-hover {
+  display: block;
+}
+
+
+.cell .btn {
   position: absolute;
   right: 50%;
   bottom: 17px;
@@ -895,22 +898,6 @@ li:not(.sub-current):active > .sub-menu-item {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
 }
-
-/*
-.communication-items .input-group {
-  position: absolute;
-  right: 159px;
-  left: 21px;
-}
-
-.communication-items input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 13px 12px;
-  border: 1px solid #d3d3d2;
-  border-radius: 4px;
-}
-*/
 
 .map-contacts .row {
   margin-bottom: 0;
@@ -1225,6 +1212,7 @@ main h1 {
   background-color: #aabab0;
   border: 2px solid #fbfcfb;
   border-radius: 18px;
+  outline: none; 
 }
 
 .filters button[type="submit"]:hover {
