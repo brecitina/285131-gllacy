@@ -8,92 +8,92 @@
     <link href="css/style2.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
       <div class="wrapper">
-        <div class="row clearfix">
-          <nav class="main-nav">
-            <img src="img/logo.png" width=154 height=64 alt="Gllacy Shop">
-            <ul class="main-menu">
-              <li>
-                <a class="main-nav-item" href="#">Каталог</a>
-                <ul class="sub-menu">
-                  <li><a class="sub-menu-item first" href="#"><b>Новинки</b></a></li>
-                  <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
-                  <li><a class="sub-menu-item">Щербеты</a></li>
-                  <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
-                  <li><a class="sub-menu-item" href="#">Мелорин</a></li>
-                </ul>
-              </li> 
-              <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
-              <li><a class="main-nav-item" href="#">О Компании</a></li>
+        <header class="main-header">
+          <div class="row clearfix">
+            <nav class="main-nav">
+              <img src="img/logo.png" width=154 height=64 alt="Gllacy Shop">
+              <ul class="main-menu">
+                <li>
+                  <a class="main-nav-item" href="#">Каталог</a>
+                  <ul class="sub-menu">
+                    <li><a class="sub-menu-item first" href="#"><b>Новинки</b></a></li>
+                    <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
+                    <li><a class="sub-menu-item">Щербеты</a></li>
+                    <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
+                    <li><a class="sub-menu-item" href="#">Мелорин</a></li>
+                  </ul>
+                </li> 
+                <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
+                <li><a class="main-nav-item" href="#">О Компании</a></li>
+              </ul>
+            </nav>
+            <ul  class="user-block">
+              <li class="user-item">
+                <div class="searshinput"></div>
+                <form class="user-form" action="/search/" method="GET">
+                  <div class="user-input-group">
+                    <input class="user-input" id="user-search" type="search" name="search" placeholder="Что ищем?" required>
+                    <label for="user-search">Что ищем?</label>
+                  </div>
+                </form>
+              </li>
+              <li class="user-item">
+                <a class="enter" href="#">Вход</a>
+                <form class="user-form clearfix" action="#" method="POST">
+                  <div class="user-input-group">
+                    <input class="user-input" id="user-login" type="email" name="login" placeholder="Электронная почта" required>
+                    <label for="user-login">Электронная почта</label>
+                  </div>
+                  <div class="user-input-group">
+                    <input class="user-input" id="user-password" type="password" name="password" placeholder="Пароль" required>
+                    <label for="user-login">Пароль</label>
+                  </div>
+                  <button class="btn" type="submit">Войти</button>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </form>
+              </li>
+              <li class="user-item">
+                <a class="all-products" href="#">Пусто</a>
+              </li>
             </ul>
-          </nav>
-          <ul  class="user-block">
-            <li class="user-item">
-              <div class="searshinput"></div>
-              <form class="user-form" action="/search/" method="GET">
-                <div class="user-input-group">
-                  <input class="user-input" id="user-search" type="search" name="search" placeholder="Что ищем?" required>
-                  <label for="user-search">Что ищем?</label>
-                </div>
-              </form>
-            </li>
-            <li class="user-item">
-              <a class="enter" href="#">Вход</a>
-              <form class="user-form clearfix" action="#" method="POST">
-                <div class="user-input-group">
-                  <input class="user-input" id="user-login" type="email" name="login" placeholder="Электронная почта" required>
-                  <label for="user-login">Электронная почта</label>
-                </div>
-                <div class="user-input-group">
-                  <input class="user-input" id="user-password" type="password" name="password" placeholder="Пароль" required>
-                  <label for="user-login">Пароль</label>
-                </div>
-                <button class="btn" type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
-            </li>
-            <li class="user-item">
-              <a class="all-products" href="#">Пусто</a>
-            </li>
-          </ul>
-          <div class="header-lable">
-            С 10 до 20, ежедневно<br>
-            <span>8 812 450-25-25</span>
+            <div class="header-lable">
+              С 10 до 20, ежедневно<br>
+              <span>8 812 450-25-25</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="row">    
+          <div class="slider">
+            <div class="slide" id="slide1">
+              <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide3">
+              <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <div class="promo">
-      <!---Слайдер. Кнопки см. «Мастерская: декоративные эффекты на CSS3» Слайдер на CSS, шаг 4. Реализацию фона и мороженок на прозрачном фоне еще найти.
-      Возможно, придется вынести слайдер?!
-      Здесь реализация анимацией http://gnatkovsky.com.ua/slajder-fonovogo-izobrazheniya-ili-menyayushhijsya-fon-sajta-s-pomoshhyu-css.html
-      Здесь еще раз про слайдер на КСС https://habrahabr.ru/post/252075/
-      Пока скрыт
-      -->
-      <div class="slider">
-        <h2>Крем-брюле и пломбир с малиновым джемом</h2><!---Заголовок вписать в слайдер! Должно быть еще 2 названия-->
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
-        <div class="slider-sliders">
-          <img src="img/brulee-raspberry.png" width=1045 height=881 alt="Крем-брюле и пломбир с малиновым джемом">
-          <img src="img/chocolate-lemon.png" width=900 height=859 alt="Шоколадный пломбир и лимонный сорбет">
-          <img src="img/cream-strawberry.png" width=900 height=852 alt="Пломбир с помадкой и клубничный щербет">
-        </div>
-        <a class="btn" href="#">Давайте оба!</a>
-      </div>
-    </div>
  
- 
-    <main>
-      <div class="wrapper">
-        
+      <main>
+        <div class="wrapper">
           <div class="row specials clearfix">
             <article class="column-left">
               <h3>Малинка даром!</h3>
@@ -191,52 +191,52 @@
               </div>
             </div>
           </div>
-        
-      </div>
+        </div>
 
-      <div class="map-contacts">
-        <!---Реализацию карты посмотреть здесь http://sm-kommunalka.ru/-->
-        <div class="wrapper">
-          <div class="row clearfix">
-            <div class="contacts">
-              <p>Адрес главного офиса<br>
-              и офлайн магазина:</p>
-              <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-              <p class="phone">Для заказов по телефону:</p>
-              <span class="phone">8 812 450-25-25</span>
-              <p>(с 10 до 20 ежедневно)</p>
-              <a class="btn" href="#">Форма обратной связи</a>
+        <div class="map-contacts">
+          <!---Реализацию карты посмотреть здесь http://sm-kommunalka.ru/-->
+          <div class="wrapper">
+            <div class="row clearfix">
+              <div class="contacts">
+                <p>Адрес главного офиса<br>
+                и офлайн магазина:</p>
+                <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                <p class="phone">Для заказов по телефону:</p>
+                <span class="phone">8 812 450-25-25</span>
+                <p>(с 10 до 20 ежедневно)</p>
+                <a class="btn" href="#">Форма обратной связи</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer class="main-footer">
       <div class="wrapper">
-        <div class="row clearfix">
-          <div class="social-footer">
-              <a class="btn-social btn-social-tw" href="#">Твиттер</a>
-              <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
-              <a class="btn-social btn-social-fb" href="#">Фэйсбук</a>
-              <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+        <footer class="main-footer">
+          <div class="row clearfix">
+            <div class="social-footer">
+                <a class="btn-social btn-social-tw" href="#">Твиттер</a>
+                <a class="btn-social btn-social-inst" href="#">Инстаграм</a>
+                <a class="btn-social btn-social-fb" href="#">Фэйсбук</a>
+                <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
+            </div>
+            <div class="copiright-footer">
+              <a class="htmlacademy-logo" href="https://htmlacademy.ru/"></a>
+              Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017
+            </div>
+            <div class="footer-nav clearfix">
+              <ul class="footer-column column-1">
+                <li class="love"><a href="#"><b>Для поставщиков</b></a></li>
+                <li><a href="#">О производстве</a></li>
+              </ul>
+              <ul class="footer-column column-2">
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+              </ul>         
+            </div>
           </div>
-          <div class="copiright-footer">
-            <a class="htmlacademy-logo" href="https://htmlacademy.ru/"></a>
-            Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017
-          </div>
-          <div class="footer-nav clearfix">
-            <ul class="footer-column column-1">
-              <li class="love"><a href="#"><b>Для поставщиков</b></a></li>
-              <li><a href="#">О производстве</a></li>
-            </ul>
-            <ul class="footer-column column-2">
-              <li><a href="#">Наши документы</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
-            </ul>         
-          </div>
-        </div>
+        </footer>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
