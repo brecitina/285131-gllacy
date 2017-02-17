@@ -5,7 +5,6 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
   background-color: #849d8f;
-  background-color: red;
 }
 
 body > input[type="radio"] {
@@ -640,7 +639,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .slide-title {
-  width: 700px;
+  width: 670px;
   margin: 0 auto;
   margin-bottom: 30px; 
   font-weight: 700;
