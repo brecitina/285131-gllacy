@@ -7,6 +7,10 @@ body {
   background-color: #849d8f;
 }
 
+body.inner-page {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0px, transparent 647px);
+}
+
 body > input[type="radio"] {
   display: none;
 }
@@ -37,6 +41,7 @@ body > input[type="radio"] {
 }
 
 .row {
+  
   padding-left: 2.3%;
   padding-right: 2.3%;
   margin-bottom: 40px; /*для .communication-items выпадет за родительский контейнер wrapper*/
