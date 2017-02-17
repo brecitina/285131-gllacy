@@ -823,12 +823,12 @@ li:not(.sub-current):active > .sub-menu-item {
   background-position: right 0;
 }
 
-.communication-items p {
+.blog-group p {
   margin: 4px 0;
   width: 310px;
 }
 
-.communication-items .blog {
+.blog-group .blog-header {
   padding-right: 10px;
   padding-top: 1px;
   font-weight: 700;
@@ -838,11 +838,11 @@ li:not(.sub-current):active > .sub-menu-item {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.communication-items .blog:hover  {
+.blog-group .blog-header:hover  {
   color: #e84d37;
 }
 
-.communication-items .blog:active  {
+.blog-group .blog-header:active  {
   color: #e84d37;
 }
 
@@ -864,14 +864,14 @@ li:not(.sub-current):active > .sub-menu-item {
   border-radius: 12px;
 }
 
-.communication-items p {
+.subscribe-group p {
   margin: 0;
 }
 
 .communication-items form {
   position: absolute;
   left: 0;
-  bottom: 35px;
+  bottom: 33px;
   box-sizing: border-box;
   width: 100%;
   padding: 0 20px;
@@ -883,6 +883,19 @@ li:not(.sub-current):active > .sub-menu-item {
   border: none;
   cursor: pointer;
 }
+
+.communication-items .input-group {
+  margin-right:  141px;
+}
+
+.communication-items input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 12px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+}
+
 /*
 .communication-items .input-group {
   position: absolute;
