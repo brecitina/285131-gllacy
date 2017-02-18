@@ -194,17 +194,16 @@
         </div>
 
         <div class="map-contacts">
+             <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5876057473056!2d30.325046675688093!3d59.93898497041628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487450908376" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           <div class="wrapper">
-            <div class="row clearfix">
-              <div class="contacts">
+            <div class="contacts">
                 <p>Адрес главного офиса<br>
                 и офлайн магазина:</p>
                 <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                 <p class="phone">Для заказов по телефону:</p>
                 <span class="phone">8 812 450-25-25</span>
                 <p>(с 10 до 20 ежедневно)</p>
-                <a class="btn" href="#">Форма обратной связи</a>
-              </div>
+                <a class="btn js-feedback" href="#">Форма обратной связи</a>
             </div>
           </div>
         </div>
@@ -240,7 +239,7 @@
     <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <p>Мы обязательно вам ответим!</p>
-      <form class="clearfix" action="#" method="POST">
+      <form class="clearfix" action="#" method="POST" novalidate>
         <div class="user-input-group">
           <input class="user-input" id="message-name" type="text" name="message-name" placeholder="Как вас зовут?" required>
           <label for="message-name">Как вас зовут?</label>
@@ -257,5 +256,66 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
+    <script>
+      var link = document.querySelector('.js-feedback');
+      var popup = document.querySelector('.modal-content');
+      var overlay = document.querySelector('.modal-overlay');
+      var close = popup.querySelector('.modal-content-close');
+      var form = popup.querySelector('form');
+      var userName = popup.querySelector('#message-name');
+      var userMail = popup.querySelector('#message-mail');
+      var userMessage = popup.querySelector('#message-feedback');
+      var storageName = localStorage.getItem('feedback-userName');
+      var storageMail = localStorage.getItem('feedback-userMail');
+
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        overlay.classList.add('modal-overlay-show');
+        popup.classList.add('modal-content-show');
+        userName.focus();
+        if (storageName) {
+          userName.value = storageName;
+          userMail.focus();
+        } 
+        if(userMail) {
+          userMail.value = storageMail;
+        }
+        if (storageName && storageMail) {
+          userMessage.focus();
+        } 
+        
+      });
+      close.addEventListener('click', function(event) {
+        event.preventDefault();
+        closePopup();
+      });
+      form.addEventListener('submit', function(event) {
+        if (!userName.value || !userMail.value || !userMessage.value) {
+          event.preventDefault();
+          popup.classList.remove('modal-error');
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add('modal-error');
+        } else {
+          localStorage.setItem('feedback-userName', userName.value);
+          localStorage.setItem('feedback-userMail', userMail.value);
+        }
+      });
+      window.addEventListener('keydown', function(event) {
+        if (event.keyCode === 27) {
+          closePopup();
+        }
+      });
+      overlay.addEventListener('click', function(event) {
+        closePopup();
+      });
+      function closePopup(event) {
+        if (popup.classList.contains('modal-content-show')) {
+          popup.classList.remove('modal-content-show');
+          popup.classList.remove('modal-error');
+          overlay.classList.remove('modal-overlay-show');
+        }
+      }
+    </script>
+    
   </body>
 </html>
