@@ -721,7 +721,7 @@ li:not(.sub-current):active > .sub-menu-item {
   line-height: 22px;
 }
 
-.specials h3 {
+.specials h2 {
   margin: 0;
   margin-bottom: 15px;
   font-size: 35px;
@@ -1641,3 +1641,90 @@ main h1 {
   background-position: -369px -5px;
 }
 
+/*Всплывающее окно обратной связи*/
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+  box-sizing: border-box;
+  width: 477px;
+  min-height: 442px;
+  padding: 19px 24px 27px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 8px;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content-close::after,
+.modal-content-close::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.modal-content-close::after {
+   transform: rotate(45deg);
+}
+.modal-content-close::before {
+  transform: rotate(-45deg);
+}
+
+.modal-content p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-content .user-input-group {
+  margin: 20px 0;
+}
+
+.modal-content .user-input {
+  width: 267px;
+  margin: 0;
+}
+
+.modal-content .user-input.textarea {
+  height: 155px;
+  width: 100%;
+}
+
+.modal-content .btn {
+  float: right;
+  padding: 9px 25px 11px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}

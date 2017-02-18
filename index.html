@@ -96,12 +96,12 @@
         <div class="wrapper">
           <div class="row specials clearfix">
             <article class="column-left">
-              <h3>Малинка даром!</h3>
+              <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="btn" href="#">Хочу варенье!</a>
             </article>
             <article class="column-right">
-              <h3>Шоколадки даром!</h3>
+              <h2>Шоколадки даром!</h2>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
               <a class="btn" href="#">Хочу шоколадки!</a>
             </article>
@@ -235,7 +235,27 @@
             </div>
           </div>
         </footer>
-      </div>
+      </div>      
     </div>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="clearfix" action="#" method="POST">
+        <div class="user-input-group">
+          <input class="user-input" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?" required>
+          <label for="user-name">Как вас зовут?</label>
+        </div>
+        <div class="user-input-group">
+          <input class="user-input" id="user-mail" type="email" name="user-mail" placeholder="Ваша почта для ответа?" required>
+          <label for="user-name">Ваша почта для ответа?</label>
+        </div>
+        <div class="user-input-group">
+          <textarea class="user-input textarea" id="user-message" type="text" name="user-message" placeholder="Напишите что-нибудь..." row=6 required></textarea>
+          <label for="user-message">Напишите что-нибудь...</label>
+        </div>
+        <button class="btn" type="submit" title="Отправить">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
