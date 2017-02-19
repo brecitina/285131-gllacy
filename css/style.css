@@ -98,6 +98,7 @@ body > input[type="radio"] {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76); 
   color: #ffffff;
   background-color: #ec583c;
+  background-image: -webkit-linear-gradient(bottom, #e74a35, #f26843);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 22px;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64); 
@@ -106,6 +107,7 @@ body > input[type="radio"] {
 .btn:hover {
   color: #ffffff;
   background-color: #f07a63;
+  background-image: -webkit-linear-gradient(bottom, #ec6f5e, #f58669);
   background-image: linear-gradient(to top, #ec6f5e, #f58669);
   box-shadow: 0px 2px 2px 0px #ac1000; 
 }
@@ -113,6 +115,7 @@ body > input[type="radio"] {
 .btn:active {
   color: #ffffff;
   background-color: #db5338;
+  background-image: -webkit-linear-gradient(top, #d74632, #e1613e);
   background-image: linear-gradient(to bottom, #d74632, #e1613e);
   box-shadow: inset 0px 2px 2px 0px #ac1000;
 }
@@ -762,7 +765,8 @@ li:not(.sub-current):active > .sub-menu-item {
 .cell .background-hover {
   position: absolute;
   top: -9px;
-  transform: translate(-4%, 0);
+  -webkit-transform: translate(-4%, 0);
+          transform: translate(-4%, 0);
   z-index: -1;
   display: none;
   width: 110%;
@@ -782,7 +786,8 @@ li:not(.sub-current):active > .sub-menu-item {
   position: absolute;
   right: 50%;
   bottom: 17px;
-  transform: translate(50%, 0);
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
   min-width: 193px;
   padding: 9px 12px 11px;  
 }
@@ -807,7 +812,8 @@ li:not(.sub-current):active > .sub-menu-item {
   line-height: 45px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
-  filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+          filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
 .price span {
@@ -957,6 +963,7 @@ li:not(.sub-current):active > .sub-menu-item {
 
 .communication-items .column-right {
   padding: 6px;
+  background-image: -webkit-repeating-linear-gradient(315deg, #f8f7f4 0px, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
 }
 
@@ -1413,7 +1420,8 @@ main h1 {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   width: 9px;
   height: 14px;
   background-image: url("../img/spritesheet.png");
@@ -1427,7 +1435,8 @@ main h1 {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   width: 9px;
   height: 14px;
   background-image: url("../img/spritesheet.png");
@@ -1653,30 +1662,70 @@ main h1 {
 }
 
 /*Всплывающее окно обратной связи*/
-@keyframes bom {
+@-webkit-keyframes bom {
   0%   {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   70% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   90% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bom {
+  0%   {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -1699,11 +1748,13 @@ main h1 {
 
 .modal-content-show {
   display: block;
-  animation: bom 0.5s ease-in-out;
+  -webkit-animation: bom 0.5s ease-in-out;
+          animation: bom 0.5s ease-in-out;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -1732,10 +1783,12 @@ main h1 {
 }
 
 .modal-content-close::after {
-   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
 }
 .modal-content-close::before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-content p {
