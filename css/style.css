@@ -294,7 +294,7 @@ li:not(.sub-current):active > .sub-menu-item {
   width: 17px;
   height: 17px;
   background-image: url("../img/spritesheet.png");
-  background-position: -462px -5px;
+  background-position: -493px -5px;
 }
 
 .user-item:hover .searshinput {
@@ -302,7 +302,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .user-item:hover .searshinput::before {
-  background-position: -489px -5px;
+  background-position: -520px -5px;
 }
 
 /* стили для выпадашек с формами*/
@@ -423,7 +423,7 @@ li:not(.sub-current):active > .sub-menu-item {
   width: 21px;
   height: 19px;
   background-image: url("../img/spritesheet.png");
-  background-position: -338px -5px;
+  background-position: -369px -5px;
 }
 
 .user-item:hover .enter {
@@ -432,7 +432,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .user-item:hover .enter::before {
-  background-position: -369px -5px;
+  background-position: -400px -5px;
 }
 
 .enter + .user-form {
@@ -507,7 +507,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .user-item:hover .all-products:not(.full)::before {
-  filter: invert(1);
+  background-position: -267px -5px;
 }
 
 .all-products + .user-form {
@@ -543,7 +543,7 @@ li:not(.sub-current):active > .sub-menu-item {
   background-image: url("../img/spritesheet.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: -936px -5px;
+  background-position: -967px -5px;
   border: 0;
   cursor: pointer;
 }
@@ -825,7 +825,7 @@ li:not(.sub-current):active > .sub-menu-item {
   height: 32px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -425px -5px;
+  background-position: -456px -5px;
 }
 
 .cell p {
@@ -857,7 +857,7 @@ li:not(.sub-current):active > .sub-menu-item {
   height: 61px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -267px -5px;
+  background-position: -298px -5px;
 }
 
 .features {
@@ -904,11 +904,11 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features .ice-img::before {
-  background-position: -516px -5px;
+  background-position: -547px -5px;
 }
 
 .features .leaf-img::before {
-  background-position: -575px -5px;
+  background-position: -606px -5px;
 }
 
 .features .cow-img::before {
@@ -916,7 +916,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .features .thermo-img::before {
-  background-position: -878px -5px;
+  background-position: -909px -5px;
 }
 
 .communication-items .column-left {
@@ -1415,7 +1415,7 @@ main h1 {
   height: 14px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -672px -5px;
+  background-position: -703px -5px;
 }
 
 
@@ -1429,7 +1429,7 @@ main h1 {
   height: 14px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -634px -5px;
+  background-position: -665px -5px;
 }
 
 .paginator-item.disabled::after {
@@ -1454,7 +1454,7 @@ main h1 {
 } 
 
 .paginator-item.prev:not(.disabled):active::after {
-  background-position: -691px -5px;
+  background-position: -722px -5px;
 }
 
 .paginator-item.next:not(.disabled):hover::before {
@@ -1474,7 +1474,7 @@ main h1 {
 } 
 
 .paginator-item.next:not(.disabled):active::after {
-  background-position: -653px -5px;
+  background-position: -684px -5px;
 }
 
 /*Стили каталога закончились*/
@@ -1544,19 +1544,19 @@ main h1 {
 }
 
 .social-footer .btn-social-tw::before {
-  background-position: -794px -5px;
+  background-position: -825px -5px;
 }
 
 .social-footer .btn-social-inst::before {
-  background-position: -752px -5px;
+  background-position: -783px -5px;
 }
 
 .social-footer .btn-social-fb::before {
-  background-position: -710px -5px;
+  background-position: -741px -5px;
 }
 
 .social-footer .btn-social-vk::before {
-  background-position: -836px -5px;
+  background-position: -867px -5px;
 }
 
 .social-footer .btn-social:hover {
@@ -1646,7 +1646,7 @@ main h1 {
   height: 13px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -400px -5px;
+  background-position: -431px -5px;
 }
 
 /*Всплывающее окно обратной связи*/
