@@ -34,80 +34,122 @@
     background-position: -236px -5px;
 }
 
+.sprite-ic-basket-invert {
+    width: 21px;
+    height: 20px;
+    background-position: -267px -5px;
+}
+
 .sprite-ic-hit {
     width: 61px;
     height: 61px;
-    background-position: -267px -5px;
+    background-position: -298px -5px;
 }
 
 .sprite-ic-login {
     width: 21px;
     height: 19px;
-    background-position: -338px -5px;
+    background-position: -369px -5px;
+}
+
+.sprite-ic-login-invert {
+    width: 21px;
+    height: 19px;
+    background-position: -400px -5px;
 }
 
 .sprite-ic-love {
     width: 15px;
     height: 13px;
-    background-position: -369px -5px;
+    background-position: -431px -5px;
 }
 
 .sprite-ic-rubli {
     width: 27px;
     height: 32px;
-    background-position: -394px -5px;
+    background-position: -456px -5px;
 }
 
 .sprite-ic-search {
     width: 17px;
     height: 17px;
-    background-position: -431px -5px;
+    background-position: -493px -5px;
+}
+
+.sprite-ic-search-invert {
+    width: 17px;
+    height: 17px;
+    background-position: -520px -5px;
 }
 
 .sprite-ice-img {
     width: 49px;
     height: 49px;
-    background-position: -458px -5px;
+    background-position: -547px -5px;
 }
 
 .sprite-leaf-img {
     width: 49px;
     height: 49px;
-    background-position: -517px -5px;
+    background-position: -606px -5px;
+}
+
+.sprite-next-icon {
+    width: 9px;
+    height: 14px;
+    background-position: -665px -5px;
+}
+
+.sprite-next-icon-invert {
+    width: 9px;
+    height: 14px;
+    background-position: -684px -5px;
+}
+
+.sprite-prev-icon {
+    width: 9px;
+    height: 14px;
+    background-position: -703px -5px;
+}
+
+.sprite-prev-icon-invert {
+    width: 9px;
+    height: 14px;
+    background-position: -722px -5px;
 }
 
 .sprite-social-fb {
     width: 32px;
     height: 32px;
-    background-position: -576px -5px;
+    background-position: -741px -5px;
 }
 
 .sprite-social-inst {
     width: 32px;
     height: 32px;
-    background-position: -618px -5px;
+    background-position: -783px -5px;
 }
 
 .sprite-social-tw {
     width: 32px;
     height: 32px;
-    background-position: -660px -5px;
+    background-position: -825px -5px;
 }
 
 .sprite-social-vk {
     width: 32px;
     height: 32px;
-    background-position: -702px -5px;
+    background-position: -867px -5px;
 }
 
 .sprite-thermo-img {
     width: 48px;
     height: 49px;
-    background-position: -744px -5px;
+    background-position: -909px -5px;
 }
 
 .sprite-x-icon {
     width: 11px;
     height: 11px;
-    background-position: -802px -5px;
+    background-position: -967px -5px;
 }
