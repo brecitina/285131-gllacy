@@ -808,6 +808,7 @@ li:not(.sub-current):active > .sub-menu-item {
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
   filter: drop-shadow(0px 1px 3px rgba(49, 50, 53, 0.5));
+  -ms-filter: progid:DXImageTransform.Microsoft.DropShadow(0px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
 .price span {
@@ -1540,7 +1541,7 @@ main h1 {
   height: 32px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  filter: opacity(0.8);
+  opacity: 0.8;
 }
 
 .social-footer .btn-social-tw::before {
@@ -1564,7 +1565,7 @@ main h1 {
 }
 
 .social-footer .btn-social:hover::before {
-  filter: opacity(1);
+  opacity: 1;
 }
 
 .social-footer .btn-social:active {
@@ -1572,7 +1573,7 @@ main h1 {
 }
 
 .social-footer .btn-social:active::before {
-  filter: opacity(1);
+  opacity: 1;
   border-radius: 50%;
   box-shadow: inset 0px 2px 1px 0px #888888;
 }
