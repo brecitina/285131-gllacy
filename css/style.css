@@ -184,7 +184,7 @@ body > input[type="radio"] {
   overflow: hidden;
 }
 
-.main-menu li:hover .sub-menu {
+li:hover .sub-menu {
   display: block;
 }
 
@@ -797,6 +797,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .cell img {
+  display: block;
   width: 100%; 
   max-width: 267px; 
   min-width: 200px; 
@@ -806,7 +807,7 @@ li:not(.sub-current):active > .sub-menu-item {
 }
 
 .cell .price {
-  margin-top: -64px;
+  margin-top: -58px;
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
@@ -1013,21 +1014,24 @@ li:not(.sub-current):active > .sub-menu-item {
   border-radius: 4px;
 }
 
-.map-contacts {
-  height: 430px;
+.map-contacts  {
+  width: 100%;
+  height: 430px; 
+}
+
+.map-contacts .default-map {
+  background-color: #d9e2db;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.map-contacts .google-map {
-  position: absolute;
-  width: 100%;
-}
-
 .map-contacts .wrapper {
   margin-bottom: 0;
-  position: relative;  
+  position: absolute;
+  height: 430px;
+  left: 0;
+  right: 0;
 }
 
 .contacts {
@@ -1044,6 +1048,7 @@ li:not(.sub-current):active > .sub-menu-item {
   color: #323232;
   background-color: #fefefe;
   border-radius: 14px;
+  z-index: 3;
 }
 
 .contacts p {
@@ -1090,6 +1095,7 @@ li:not(.sub-current):active > .sub-menu-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  vertical-align: top;
 }
 
 .breadcrumbs a {
