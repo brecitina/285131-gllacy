@@ -935,7 +935,7 @@ li:not(.sub-current):active > .sub-menu-item {
   background-color: #ffffff;
   background-image: url("../img/berry-fon.jpg");
   background-repeat: no-repeat;
-  background-position: right 0;
+  background-position: right -3px top 0;
 }
 
 .blog-group p {
@@ -1593,7 +1593,7 @@ main h1 {
 .copiright-footer {
   float: right;
   box-sizing: border-box;
-  width: 192px;
+  width: 191px;
   padding-left: 0;
   font-size: 12px;
 }
@@ -1605,7 +1605,7 @@ main h1 {
   margin-bottom: 3px;
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  background-position: -87px -5px;
+  background-position: -85px -5px;
 }
 
 .copiright-footer a {
